@@ -1,0 +1,4582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#15172e"
+    >
+
+    <title>Flávio & Marina | Casamento</title>
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Josefin+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <style>
+
+        /* =====================================================
+           PALETA
+        ===================================================== */
+
+        :root {
+
+            --navy: #15172e;
+            --navy-light: #25203a;
+
+            --terracotta: #a94f2b;
+            --orange: #d9772f;
+
+            --gold: #d8ad55;
+            --gold-light: #e5c67b;
+
+            --cream: #f4e9d8;
+            --white-soft: #fffaf1;
+
+            --border:
+                rgba(216, 173, 85, 0.32);
+
+            --shadow:
+                0 25px 80px
+                rgba(0, 0, 0, 0.20);
+
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            min-height: 100vh;
+
+            overflow-x: hidden;
+
+            color: var(--cream);
+
+            font-family:
+                "Cormorant Garamond",
+                Georgia,
+                serif;
+
+            background:
+
+                radial-gradient(
+                    circle at 75% 80%,
+                    rgba(217, 119, 47, 0.50),
+                    transparent 35%
+                ),
+
+                radial-gradient(
+                    circle at 30% 55%,
+                    rgba(169, 79, 43, 0.25),
+                    transparent 35%
+                ),
+
+                linear-gradient(
+                    180deg,
+                    #111429 0%,
+                    #1d1931 38%,
+                    #6f3429 75%,
+                    #b95d29 100%
+                );
+
+        }
+
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: -2;
+
+            pointer-events: none;
+
+            opacity: 0.22;
+
+            background-image:
+
+                radial-gradient(
+                    circle,
+                    rgba(229, 198, 123, 0.70) 1px,
+                    transparent 1.5px
+                );
+
+            background-size:
+                53px 53px;
+
+        }
+
+
+        body::after {
+
+            content: "";
+
+            position: fixed;
+
+            width: 500px;
+            height: 500px;
+
+            top: -250px;
+            left: -210px;
+
+            z-index: -1;
+
+            pointer-events: none;
+
+            border:
+                2px solid
+                rgba(216, 173, 85, 0.45);
+
+            border-radius: 50%;
+
+        }
+
+
+        /* =====================================================
+           GERAL
+        ===================================================== */
+
+        .page {
+
+            width:
+                min(
+                    1120px,
+                    calc(100% - 34px)
+                );
+
+            margin: 0 auto;
+
+        }
+
+
+        .section {
+
+            padding:
+                95px 0;
+
+        }
+
+
+        h1,
+        h2,
+        h3,
+        p {
+            margin-top: 0;
+        }
+
+
+        h2 {
+
+            margin-bottom: 18px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size:
+                clamp(2rem, 5vw, 3.2rem);
+
+            font-weight: 300;
+
+            letter-spacing: 0.08em;
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        .section-heading {
+
+            max-width: 760px;
+
+            margin:
+                0 auto 50px;
+
+            text-align: center;
+
+        }
+
+
+        .section-description {
+
+            margin: 0;
+
+            font-size:
+                clamp(1.12rem, 2.5vw, 1.35rem);
+
+            line-height: 1.7;
+
+            color:
+                rgba(
+                    244,
+                    233,
+                    216,
+                    0.84
+                );
+
+        }
+
+
+        .eyebrow {
+
+            display: block;
+
+            margin-bottom: 13px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 0.78rem;
+
+            letter-spacing: 0.30em;
+
+            text-transform: uppercase;
+
+            color: var(--gold);
+
+        }
+
+
+        /* =====================================================
+           ORNAMENTO
+        ===================================================== */
+
+        .ornament {
+
+            width: 190px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 13px;
+
+            margin:
+                30px auto;
+
+        }
+
+
+        .ornament::before,
+        .ornament::after {
+
+            content: "";
+
+            flex: 1;
+
+            height: 1px;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    var(--gold),
+                    transparent
+                );
+
+        }
+
+
+        .ornament span {
+            color: var(--gold);
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+
+            min-height: 100svh;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+
+            padding:
+                70px 20px;
+
+            text-align: center;
+
+        }
+
+
+        .hero-content {
+
+            width:
+                min(
+                    800px,
+                    100%
+                );
+
+        }
+
+
+        .moon {
+
+            width: 95px;
+            height: 95px;
+
+            margin:
+                0 auto 30px;
+
+            position: relative;
+
+            border-radius: 50%;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #f0cf79,
+                    #c8953e
+                );
+
+            box-shadow:
+
+                0 0 40px
+                rgba(216, 173, 85, 0.18);
+
+        }
+
+
+        .moon::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 91px;
+            height: 91px;
+
+            top: -8px;
+            left: 27px;
+
+            border-radius: 50%;
+
+            background:
+                #15172e;
+
+        }
+
+
+        .hero-kicker {
+
+            margin-bottom: 18px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 0.82rem;
+
+            letter-spacing: 0.34em;
+
+            text-transform: uppercase;
+
+            color:
+                var(--gold);
+
+        }
+
+
+        .hero h1 {
+
+            margin-bottom: 24px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size:
+                clamp(3.4rem, 10vw, 6.9rem);
+
+            line-height: 0.98;
+
+            font-weight: 300;
+
+            letter-spacing: 0.07em;
+
+            color:
+                var(--gold);
+
+        }
+
+
+        .ampersand {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-style: italic;
+
+        }
+
+
+        .hero-text {
+
+            max-width: 540px;
+
+            margin: 0 auto;
+
+            font-size:
+                clamp(1.28rem, 3vw, 1.65rem);
+
+            line-height: 1.65;
+
+            color:
+                rgba(
+                    255,
+                    250,
+                    241,
+                    0.90
+                );
+
+        }
+
+
+        .hero-details {
+
+            margin-top: 32px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 0.82rem;
+
+            line-height: 2.1;
+
+            letter-spacing: 0.22em;
+
+            text-transform: uppercase;
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        /* =====================================================
+           GOOGLE MAPS
+        ===================================================== */
+
+        .location-link {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            gap: 8px;
+
+            padding-bottom: 3px;
+
+            color:
+                var(--gold-light);
+
+            text-decoration: none;
+
+            border-bottom:
+                1px solid
+                rgba(216, 173, 85, 0.35);
+
+            transition:
+                0.2s ease;
+
+        }
+
+
+        .location-link:hover {
+
+            color:
+                var(--white-soft);
+
+            border-color:
+                var(--gold);
+
+            transform:
+                translateY(-1px);
+
+        }
+
+
+        .map-hint {
+
+            display: block;
+
+            margin-top: 5px;
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size: 0.92rem;
+
+            letter-spacing: 0.04em;
+
+            text-transform: none;
+
+            color:
+                rgba(
+                    244,
+                    233,
+                    216,
+                    0.58
+                );
+
+        }
+
+
+        /* =====================================================
+           ATALHOS DO TOPO
+        ===================================================== */
+
+        .quick-nav {
+
+            width:
+                min(
+                    760px,
+                    100%
+                );
+
+            margin:
+                38px auto 0;
+
+            display: flex;
+
+            align-items: stretch;
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+        }
+
+
+        .quick-nav a {
+
+            min-width: 150px;
+
+            display:
+                inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            padding:
+                13px 17px;
+
+            border:
+                1px solid
+                rgba(
+                    216,
+                    173,
+                    85,
+                    0.32
+                );
+
+            border-radius: 999px;
+
+            color:
+                var(--gold-light);
+
+            background:
+                rgba(
+                    21,
+                    23,
+                    46,
+                    0.42
+                );
+
+            text-decoration: none;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 0.68rem;
+
+            font-weight: 400;
+
+            letter-spacing: 0.12em;
+
+            text-transform: uppercase;
+
+            backdrop-filter:
+                blur(8px);
+
+            transition:
+                0.2s ease;
+
+        }
+
+
+        .quick-nav a span {
+
+            color: var(--gold);
+
+            font-size: 0.9rem;
+
+        }
+
+
+        .quick-nav a:hover {
+
+            transform:
+                translateY(-2px);
+
+            color:
+                var(--white-soft);
+
+            border-color:
+                var(--gold);
+
+            background:
+                rgba(
+                    216,
+                    173,
+                    85,
+                    0.10
+                );
+
+        }
+
+
+        /* =====================================================
+           MANUAL
+        ===================================================== */
+
+        .cards {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    minmax(0, 1fr)
+                );
+
+            gap: 22px;
+
+        }
+
+
+        .card {
+
+            padding: 34px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: 8px;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    rgba(37, 32, 58, 0.84),
+                    rgba(21, 23, 46, 0.76)
+                );
+
+            box-shadow:
+                var(--shadow);
+
+            backdrop-filter:
+                blur(10px);
+
+            transition:
+                0.25s ease;
+
+        }
+
+
+        .card:hover {
+
+            transform:
+                translateY(-4px);
+
+            border-color:
+                rgba(
+                    216,
+                    173,
+                    85,
+                    0.65
+                );
+
+        }
+
+
+        .card-icon {
+
+            width: 47px;
+            height: 47px;
+
+            display: grid;
+
+            place-items: center;
+
+            margin-bottom: 23px;
+
+            border:
+                1px solid
+                rgba(
+                    216,
+                    173,
+                    85,
+                    0.50
+                );
+
+            border-radius: 50%;
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        .card h3 {
+
+            margin-bottom: 12px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 1.05rem;
+
+            font-weight: 400;
+
+            letter-spacing: 0.12em;
+
+            text-transform: uppercase;
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        .card p {
+
+            margin: 0;
+
+            font-size: 1.12rem;
+
+            line-height: 1.65;
+
+            color:
+                rgba(
+                    255,
+                    250,
+                    241,
+                    0.83
+                );
+
+        }
+
+
+        .card strong {
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        /* =====================================================
+           RSVP
+        ===================================================== */
+
+        .rsvp-section {
+
+            padding:
+                20px 0 80px;
+
+            scroll-margin-top: 30px;
+
+        }
+
+
+        .rsvp-box {
+
+            max-width: 820px;
+
+            margin:
+                0 auto;
+
+            padding:
+                48px 40px;
+
+            text-align: center;
+
+            border:
+                1px solid
+                rgba(
+                    216,
+                    173,
+                    85,
+                    0.44
+                );
+
+            border-radius: 10px;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    rgba(37, 32, 58, 0.90),
+                    rgba(21, 23, 46, 0.84)
+                );
+
+            box-shadow:
+                var(--shadow);
+
+        }
+
+
+        .rsvp-box p {
+
+            max-width: 620px;
+
+            margin:
+                0 auto 28px;
+
+            font-size: 1.2rem;
+
+            line-height: 1.7;
+
+        }
+
+
+        .rsvp-button {
+
+            display:
+                inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            padding:
+                18px 32px;
+
+            border:
+                1px solid
+                var(--gold);
+
+            color:
+                #16172b;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    var(--gold-light),
+                    var(--gold)
+                );
+
+            text-decoration: none;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 0.8rem;
+
+            font-weight: 600;
+
+            letter-spacing: 0.17em;
+
+            text-transform: uppercase;
+
+            transition:
+                0.2s ease;
+
+        }
+
+
+        .rsvp-button:hover {
+
+            transform:
+                translateY(-2px);
+
+            box-shadow:
+                0 12px 32px
+                rgba(
+                    216,
+                    173,
+                    85,
+                    0.24
+                );
+
+        }
+
+
+        /* =====================================================
+           PRESENTES
+        ===================================================== */
+
+        #manual,
+        #presentes,
+        #local {
+
+            scroll-margin-top: 30px;
+
+        }
+
+
+        .gift-notice {
+
+            max-width: 760px;
+
+            margin:
+                0 auto 40px;
+
+            padding:
+                22px 25px;
+
+            text-align: center;
+
+            border:
+                1px solid
+                rgba(
+                    216,
+                    173,
+                    85,
+                    0.24
+                );
+
+            background:
+                rgba(
+                    21,
+                    23,
+                    46,
+                    0.50
+                );
+
+            font-size: 1.12rem;
+
+            line-height: 1.65;
+
+        }
+
+
+        .gifts-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    minmax(0, 1fr)
+                );
+
+            gap: 25px;
+
+        }
+
+
+        .gift-card {
+
+            display: flex;
+
+            flex-direction: column;
+
+            overflow: hidden;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: 9px;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    rgba(37, 32, 58, 0.88),
+                    rgba(21, 23, 46, 0.80)
+                );
+
+            box-shadow:
+                var(--shadow);
+
+            transition:
+                0.25s ease;
+
+        }
+
+
+        .gift-card:hover {
+
+            transform:
+                translateY(-5px);
+
+            border-color:
+                rgba(
+                    216,
+                    173,
+                    85,
+                    0.65
+                );
+
+        }
+
+
+        .gift-card.full-width {
+
+            grid-column:
+                1 / -1;
+
+        }
+
+
+        /* =====================================================
+           IMAGENS DOS CARDS
+        ===================================================== */
+
+        .gift-image-wrapper {
+
+            height: 220px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            border-bottom:
+                1px solid
+                var(--border);
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #25203a,
+                    #39273b
+                );
+
+        }
+
+
+        .gift-card.full-width
+        .gift-image-wrapper {
+
+            height: 340px;
+
+        }
+
+
+        .gift-img {
+
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            position: relative;
+
+            z-index: 2;
+
+            object-fit: cover;
+
+            object-position: center;
+
+        }
+
+
+        .fallback {
+
+            position: absolute;
+
+            inset: 0;
+
+            z-index: 1;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            gap: 12px;
+
+            padding: 25px;
+
+            text-align: center;
+
+            background:
+
+                radial-gradient(
+                    circle,
+                    rgba(216, 173, 85, 0.15),
+                    transparent 55%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #25203a,
+                    #39273b
+                );
+
+        }
+
+
+        .fallback-icon {
+
+            font-size: 2.3rem;
+
+            color: var(--gold);
+
+        }
+
+
+        .fallback-text {
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 0.8rem;
+
+            line-height: 1.5;
+
+            letter-spacing: 0.12em;
+
+            text-transform: uppercase;
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        /* =====================================================
+           TEXTO DOS CARDS
+        ===================================================== */
+
+        .gift-info {
+
+            display: flex;
+
+            flex-direction: column;
+
+            flex-grow: 1;
+
+            padding: 25px;
+
+        }
+
+
+        .gift-info h3 {
+
+            margin-bottom: 12px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 1.03rem;
+
+            line-height: 1.45;
+
+            font-weight: 500;
+
+            letter-spacing: 0.07em;
+
+            text-transform: uppercase;
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        .gift-info p {
+
+            flex-grow: 1;
+
+            margin-bottom: 18px;
+
+            font-size: 1.06rem;
+
+            line-height: 1.55;
+
+            color:
+                rgba(
+                    255,
+                    250,
+                    241,
+                    0.82
+                );
+
+        }
+
+
+        .gift-price-label {
+
+            display: block;
+
+            margin-bottom: 5px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 0.67rem;
+
+            letter-spacing: 0.18em;
+
+            text-transform: uppercase;
+
+            color:
+                rgba(
+                    229,
+                    198,
+                    123,
+                    0.72
+                );
+
+        }
+
+
+        .gift-price {
+
+            margin-bottom: 20px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 1.5rem;
+
+            color:
+                var(--gold);
+
+        }
+
+
+        .gift-card.full-width
+        .gift-info {
+
+            padding: 36px;
+
+            text-align: center;
+
+        }
+
+
+        .gift-card.full-width
+        .gift-info p {
+
+            max-width: 800px;
+
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+
+        /* =====================================================
+           BOTÕES
+        ===================================================== */
+
+        .pix-button {
+
+            appearance: none;
+
+            width: 100%;
+
+            padding:
+                17px 20px;
+
+            cursor: pointer;
+
+            border:
+                1px solid
+                var(--gold);
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 0.78rem;
+
+            font-weight: 600;
+
+            letter-spacing: 0.17em;
+
+            text-transform: uppercase;
+
+            color:
+                #16172b;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    var(--gold-light),
+                    var(--gold)
+                );
+
+            transition:
+                0.2s ease;
+
+        }
+
+
+        .pix-button:hover {
+
+            transform:
+                translateY(-2px);
+
+            box-shadow:
+                0 10px 30px
+                rgba(
+                    216,
+                    173,
+                    85,
+                    0.24
+                );
+
+        }
+
+
+        .gift-card.full-width
+        .pix-button {
+
+            max-width: 380px;
+
+            margin:
+                auto;
+
+        }
+
+
+        /* =====================================================
+           MODAL
+        ===================================================== */
+
+        .modal {
+
+            display: none;
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 9999;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+
+            background:
+
+                rgba(
+                    10,
+                    11,
+                    23,
+                    0.91
+                );
+
+            backdrop-filter:
+                blur(8px);
+
+        }
+
+
+        .modal.open {
+
+            display: flex;
+
+        }
+
+
+        .modal-content {
+
+            width:
+                min(
+                    520px,
+                    100%
+                );
+
+            max-height: 92vh;
+
+            overflow-y: auto;
+
+            position: relative;
+
+            padding:
+                45px 30px 32px;
+
+            text-align: center;
+
+            border:
+                1px solid
+                var(--gold);
+
+            border-radius: 10px;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    #1d1931,
+                    #111429
+                );
+
+            box-shadow:
+                0 0 60px
+                rgba(
+                    216,
+                    173,
+                    85,
+                    0.15
+                );
+
+        }
+
+
+        .close-btn {
+
+            position: absolute;
+
+            top: 10px;
+            right: 18px;
+
+            cursor: pointer;
+
+            border: 0;
+
+            background: none;
+
+            font-size: 34px;
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        #modalGiftTitle {
+
+            margin-bottom: 10px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 1.1rem;
+
+            line-height: 1.45;
+
+            font-weight: 400;
+
+            letter-spacing: 0.08em;
+
+            text-transform: uppercase;
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        #modalGiftPrice {
+
+            margin-bottom: 18px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 1.3rem;
+
+            color:
+                var(--gold);
+
+        }
+
+
+        .modal-explanation {
+
+            font-size: 1.08rem;
+
+            line-height: 1.6;
+
+            color:
+                rgba(
+                    255,
+                    250,
+                    241,
+                    0.85
+                );
+
+        }
+
+
+        /* =====================================================
+           QR CODE
+        ===================================================== */
+
+        .qr-wrapper {
+
+            width: 270px;
+            height: 270px;
+
+            margin:
+                25px auto 20px;
+
+            padding: 10px;
+
+            border:
+                2px solid
+                var(--gold);
+
+            background:
+                white;
+
+        }
+
+
+        .qr-code-img {
+
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: contain;
+
+        }
+
+
+        /* =====================================================
+           PIX COPIA E COLA
+        ===================================================== */
+
+        .pix-code-label {
+
+            margin:
+                5px 0 8px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 0.67rem;
+
+            letter-spacing: 0.14em;
+
+            text-transform: uppercase;
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        .pix-code-container {
+
+            display: flex;
+
+        }
+
+
+        .pix-code-container input {
+
+            flex: 1;
+
+            min-width: 0;
+
+            padding: 14px;
+
+            border:
+                1px solid
+                var(--border);
+
+            color:
+                var(--cream);
+
+            background:
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.3
+                );
+
+            font-size: 0.76rem;
+
+        }
+
+
+        .pix-code-container button {
+
+            width: auto;
+
+            padding:
+                15px 18px;
+
+        }
+
+
+        .copy-feedback {
+
+            min-height: 27px;
+
+            margin-top: 13px;
+
+            opacity: 0;
+
+            color:
+                var(--gold-light);
+
+            transition:
+                0.2s ease;
+
+        }
+
+
+        .copy-feedback.visible {
+
+            opacity: 1;
+
+        }
+
+
+        .thanks-button {
+
+            margin-top: 5px;
+
+            background:
+                transparent;
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        .thanks-message {
+
+            display: none;
+
+            margin-top: 20px;
+
+            padding: 18px;
+
+            border:
+                1px solid
+                rgba(
+                    216,
+                    173,
+                    85,
+                    0.30
+                );
+
+            line-height: 1.6;
+
+        }
+
+
+        .thanks-message.show {
+
+            display: block;
+
+        }
+
+
+        /* =====================================================
+           RODAPÉ
+        ===================================================== */
+
+        footer {
+
+            padding:
+                80px 20px 60px;
+
+            text-align: center;
+
+            background:
+
+                linear-gradient(
+                    180deg,
+                    transparent,
+                    rgba(75, 31, 29, 0.36)
+                );
+
+        }
+
+
+        footer p {
+
+            font-size: 1.25rem;
+
+        }
+
+
+        .signature {
+
+            margin:
+                12px 0 22px;
+
+            font-size:
+                clamp(1.9rem, 5vw, 2.5rem);
+
+            font-style: italic;
+
+            color:
+                var(--gold-light);
+
+        }
+
+
+        .footer-date {
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 0.75rem;
+
+            letter-spacing: 0.25em;
+
+            text-transform: uppercase;
+
+            color:
+                var(--gold);
+
+        }
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
+
+        @media (max-width: 950px) {
+
+            .gifts-grid {
+
+                grid-template-columns:
+                    repeat(
+                        2,
+                        minmax(0, 1fr)
+                    );
+
+            }
+
+        }
+
+
+        /* =====================================================
+           CELULAR
+        ===================================================== */
+
+        @media (max-width: 720px) {
+
+            .page {
+
+                width:
+                    min(
+                        calc(100% - 28px),
+                        620px
+                    );
+
+            }
+
+
+            .section {
+
+                padding:
+                    72px 0;
+
+            }
+
+
+            .hero {
+
+                min-height:
+                    auto;
+
+                padding:
+                    60px 16px 70px;
+
+            }
+
+
+            .hero h1 {
+
+                font-size:
+                    clamp(
+                        3rem,
+                        14vw,
+                        5rem
+                    );
+
+            }
+
+
+            .quick-nav {
+
+                width:
+                    100%;
+
+                margin-top:
+                    32px;
+
+                display: grid;
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+                gap: 9px;
+
+            }
+
+
+            .quick-nav a {
+
+                min-width: 0;
+
+                padding:
+                    13px 10px;
+
+                font-size:
+                    0.61rem;
+
+                letter-spacing:
+                    0.07em;
+
+            }
+
+
+            .cards,
+            .gifts-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .gift-image-wrapper,
+            .gift-card.full-width
+            .gift-image-wrapper {
+
+                height: 235px;
+
+            }
+
+
+            .rsvp-box {
+
+                padding:
+                    38px 22px;
+
+            }
+
+
+            .rsvp-button {
+
+                width: 100%;
+
+            }
+
+
+            .pix-code-container {
+
+                flex-direction:
+                    column;
+
+            }
+
+
+            .pix-code-container input {
+
+                margin-bottom:
+                    10px;
+
+            }
+
+
+            .pix-code-container button {
+
+                width: 100%;
+
+            }
+
+
+            .modal-content {
+
+                padding:
+                    42px 20px 30px;
+
+            }
+
+
+            .qr-wrapper {
+
+                width:
+                    min(
+                        260px,
+                        100%
+                    );
+
+                height: auto;
+
+                aspect-ratio:
+                    1 / 1;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+
+        <div
+            class="moon"
+            aria-hidden="true"
+        ></div>
+
+
+        <p class="hero-kicker">
+
+            21 de novembro de 2026
+
+        </p>
+
+
+        <h1>
+
+            Flávio
+
+            <span class="ampersand">
+                &
+            </span>
+
+            Marina
+
+        </h1>
+
+
+        <div class="ornament">
+
+            <span>✦</span>
+
+        </div>
+
+
+        <p class="hero-text">
+
+            Mal podemos esperar
+            para celebrar com vocês!
+
+        </p>
+
+
+
+        <!-- LOCAL -->
+
+        <div
+            class="hero-details"
+            id="local"
+        >
+
+
+            Cerimônia às 17:00
+
+
+            <br>
+
+
+            <a
+                class="location-link"
+
+                href="https://www.google.com/maps/search/?api=1&query=Villa+Tresor+Gleba+12%2F14+Lote+01+Ponte+Alta+Norte+Gama+Brasilia+DF+72427-010"
+
+                target="_blank"
+
+                rel="noopener noreferrer"
+            >
+
+                <span aria-hidden="true">
+                    ⌖
+                </span>
+
+
+                Villa Trésor · Brasília
+
+            </a>
+
+
+            <span class="map-hint">
+
+                Toque para abrir no Google Maps
+
+            </span>
+
+
+        </div>
+
+
+
+        <!-- ATALHOS -->
+
+        <nav
+            class="quick-nav"
+            aria-label="Navegação rápida"
+        >
+
+
+            <a href="#manual">
+
+                <span>✦</span>
+
+                Manual
+
+            </a>
+
+
+            <a href="#rsvp">
+
+                <span>✓</span>
+
+                Confirmar presença
+
+            </a>
+
+
+            <a href="#presentes">
+
+                <span>♡</span>
+
+                Lista de presentes
+
+            </a>
+
+
+            <a href="#local">
+
+                <span>⌖</span>
+
+                Local
+
+            </a>
+
+
+        </nav>
+
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================================
+     MANUAL DO CONVIDADO
+========================================================= -->
+
+<section
+    class="section"
+    id="manual"
+>
+
+    <div class="page">
+
+
+        <div class="section-heading">
+
+
+            <span class="eyebrow">
+
+                Dicas para o grande dia
+
+            </span>
+
+
+            <h2>
+
+                Manual do Convidado
+
+            </h2>
+
+
+            <p class="section-description">
+
+                Preparamos algumas orientações
+                com carinho para que tudo saia
+                perfeitamente em nossa celebração.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="cards">
+
+
+            <!-- HORÁRIOS -->
+
+            <article class="card">
+
+
+                <div class="card-icon">
+                    ◷
+                </div>
+
+
+                <h3>
+                    Horários
+                </h3>
+
+
+                <p>
+
+                    A cerimônia começa
+                    pontualmente às
+
+                    <strong>
+                        17:00.
+                    </strong>
+
+
+                    Recomendamos chegar
+                    com ao menos
+
+                    <strong>
+                        30 minutos de antecedência,
+                    </strong>
+
+                    por volta de
+
+                    <strong>
+                        16:30.
+                    </strong>
+
+
+                    A festa será encerrada
+                    pontualmente às
+
+                    <strong>
+                        23:00.
+                    </strong>
+
+                </p>
+
+
+            </article>
+
+
+
+            <!-- RSVP -->
+
+            <article class="card">
+
+
+                <div class="card-icon">
+                    ✓
+                </div>
+
+
+                <h3>
+                    Confirmação de Presença
+                </h3>
+
+
+                <p>
+
+                    Sua confirmação é muito
+                    importante para organizarmos
+                    tudo com carinho.
+
+
+                    Pedimos que confirme
+                    sua presença até
+
+                    <strong>
+                        1º de novembro de 2026,
+                    </strong>
+
+                    20 dias antes do casamento.
+
+                </p>
+
+
+            </article>
+
+
+
+            <!-- CONVITE -->
+
+            <article class="card">
+
+
+                <div class="card-icon">
+                    ✦
+                </div>
+
+
+                <h3>
+                    O Convite
+                </h3>
+
+
+                <p>
+
+                    O convite é individual
+                    e intransferível.
+
+
+                    Por questões de capacidade
+                    do local, não é possível
+                    adicionar acompanhantes extras.
+
+
+                    <strong>
+                        Lembre-se:
+                        convidado não convida.
+                    </strong>
+
+                </p>
+
+
+            </article>
+
+
+
+            <!-- CERIMÔNIA -->
+
+            <article class="card">
+
+
+                <div class="card-icon">
+                    ♡
+                </div>
+
+
+                <h3>
+                    Cerimônia Unplugged
+                </h3>
+
+
+                <p>
+
+                    Durante a cerimônia,
+                    pedimos que guardem
+                    os celulares.
+
+
+                    Deixem os registros
+                    por conta dos nossos fotógrafos
+                    e aproveitem esse momento
+                    conectados conosco.
+
+                </p>
+
+
+            </article>
+
+
+
+            <!-- TRAJE -->
+
+            <article class="card">
+
+
+                <div class="card-icon">
+                    ✧
+                </div>
+
+
+                <h3>
+                    O Traje
+                </h3>
+
+
+                <p>
+
+                    Queremos que todos estejam
+                    confortáveis e elegantes,
+                    mas lembramos que as cores
+
+                    <strong>
+                        branca, marfim e off-white
+                    </strong>
+
+                    são de uso exclusivo
+                    da noiva Zira.
+
+
+                    Capriche no look
+                    e deixe o branco com ela!
+
+                </p>
+
+
+            </article>
+
+
+
+            <!-- POLÍTICA -->
+
+            <article class="card">
+
+
+                <div class="card-icon">
+                    ☀
+                </div>
+
+
+                <h3>
+                    Política da Alegria
+                </h3>
+
+
+                <p>
+
+                    Nosso maior desejo
+                    é que todos se divirtam muito.
+
+
+                    Por isso,
+
+                    <strong>
+                        reclamações não estão
+                        na lista de convidados.
+                    </strong>
+
+
+                    Se algo não for exatamente
+                    do seu agrado,
+                    faça a egípcia,
+                    guarde para si
+                    e foque no que realmente importa:
+
+                    <strong>
+                        celebrar esse momento
+                        com a gente!
+                    </strong>
+
+                </p>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     RSVP
+========================================================= -->
+
+<section
+    class="rsvp-section"
+    id="rsvp"
+>
+
+
+    <div class="page">
+
+
+        <div class="rsvp-box">
+
+
+            <span class="eyebrow">
+
+                RSVP
+
+            </span>
+
+
+            <h2>
+
+                Confirme sua presença
+
+            </h2>
+
+
+            <p>
+
+                Para conseguirmos organizar
+                cada detalhe da celebração,
+                pedimos que preencha
+                nossa lista de presença até
+
+                <strong>
+                    1º de novembro de 2026.
+                </strong>
+
+            </p>
+
+
+            <a
+                class="rsvp-button"
+
+                href="https://docs.google.com/forms/d/e/1FAIpQLSev9UWf7hlBRvkuIJUYCbwd8kophoM95V7GAm-1DcvYAnLpkQ/viewform?usp=dialog"
+
+                target="_blank"
+
+                rel="noopener noreferrer"
+            >
+
+                ✓ Confirmar minha presença
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     COTAS
+========================================================= -->
+
+<section
+    class="section"
+    id="presentes"
+>
+
+
+    <div class="page">
+
+
+        <div class="section-heading">
+
+
+            <span class="eyebrow">
+
+                Cotas de Casamento
+
+            </span>
+
+
+            <h2>
+
+                Nossa Lua de Mel
+
+            </h2>
+
+
+            <div class="ornament">
+
+                <span>✦</span>
+
+            </div>
+
+
+            <p class="section-description">
+
+                A presença de vocês
+                é o nosso maior presente.
+
+
+                Mas, caso queiram contribuir
+                com algumas das prioridades
+                financeiras extremamente sérias
+                do nosso casamento,
+                escolham uma cota abaixo.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="gift-notice">
+
+            Cada cota possui seu próprio Pix,
+            já configurado com o valor indicado.
+
+
+            Na última opção,
+
+            <strong>
+                "Lote no Nosso Coração",
+            </strong>
+
+            o valor é livre.
+
+        </div>
+
+
+
+        <div class="gifts-grid">
+
+
+            <!-- 20 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">🎮</div>
+
+                        <div class="fallback-text">
+                            Auxílio Skin do Fortnite
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="skin-fortnite.jpg"
+                        alt="Auxílio Skin do Fortnite"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Auxílio Skin do Fortnite
+                    </h3>
+
+                    <p>
+
+                        Porque a gente precisa estar
+                        com o visual em dia
+                        não só no casamento,
+                        mas também no lobby do jogo.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 20,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('20')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 30 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">🤡</div>
+
+                        <div class="fallback-text">
+                            Nariz de Palhaço
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="nariz-palhaco.jpg"
+                        alt="Nariz de Palhaço para a Marina"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Nariz de Palhaço para a Marina
+                    </h3>
+
+                    <p>
+
+                        Um item de primeira necessidade
+                        para garantir os sorrisos
+                        durante a viagem
+                        e na volta para casa.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 30,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('30')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 40 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">🎓</div>
+
+                        <div class="fallback-text">
+                            O Eterno Calouro
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="eterno-calouro.jpg"
+                        alt="O Eterno Calouro"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Cota "O Eterno Calouro"
+                    </h3>
+
+                    <p>
+
+                        Línguas, Design,
+                        Direito, Computação...
+
+
+                        Ajude a financiar
+                        um café forte para quem
+                        já pediu música no Fantástico
+                        das matrículas universitárias.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 40,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('40')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 50 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">🛋️</div>
+
+                        <div class="fallback-text">
+                            Terapia Pós-Sala de Aula
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="terapia-professora.jpg"
+                        alt="Terapia Pós-Sala de Aula"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Cota "Terapia Pós-Sala de Aula"
+                    </h3>
+
+                    <p>
+
+                        Dar aula deixa marcas.
+
+
+                        Ajude a Marina a pagar
+                        o psicólogo depois do trauma
+                        de corrigir prova,
+                        lidar com turma barulhenta
+                        e ouvir "professora,
+                        vale ponto?" pela milésima vez.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 50,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('50')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 60 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">🎨</div>
+
+                        <div class="fallback-text">
+                            Curso Aleatório da Semana
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="curso-aleatorio.jpg"
+                        alt="Curso Aleatório da Semana"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Cota "Curso Aleatório da Semana"
+                    </h3>
+
+                    <p>
+
+                        Hoje é tecido,
+                        amanhã é lira,
+                        depois cerâmica
+                        e na semana seguinte
+                        ninguém mais sabe.
+
+
+                        Ajude a pagar seja lá
+                        o que a Marina inventou
+                        de aprender desta vez.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 60,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('60')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 75 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">⚖️</div>
+
+                        <div class="fallback-text">
+                            Honorários por Pena
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="honorarios-pena.jpg"
+                        alt="Honorários por Pena"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Honorários por Pena
+                    </h3>
+
+                    <p>
+
+                        O mercado está difícil.
+
+
+                        Vamos dar uma força
+                        para esse guerreiro advogado
+                        e contribuir com honorários
+                        por pura pena,
+                        solidariedade e respeito à classe.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 75,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('75')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 85 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">📍</div>
+
+                        <div class="fallback-text">
+                            Marina Se Perdeu
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="marina-se-perdeu.jpg"
+                        alt="Marina Se Perdeu"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Cota "Marina Se Perdeu"
+                    </h3>
+
+                    <p>
+
+                        A Marina saiu de casa confiante
+                        e agora ninguém sabe
+                        onde ela está.
+
+
+                        Ajude-a a pagar
+                        um Uber para casa
+                        antes que atravesse outro estado
+                        sem perceber.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 85,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('85')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 90 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">🎬</div>
+
+                        <div class="fallback-text">
+                            Casting Suspeito
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="casting-falso.jpg"
+                        alt="Casting Suspeito"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Cota "Casting Suspeito"
+                    </h3>
+
+                    <p>
+
+                        Marina caiu em um casting falso
+                        depois de ouvir
+                        "é uma grande oportunidade".
+
+
+                        Ajude-a a pagar o prejuízo
+                        dessa promissora
+                        decisão artística.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 90,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('90')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 100 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">📱</div>
+
+                        <div class="fallback-text">
+                            Publi da Viagem
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="publi-viagem.jpg"
+                        alt="Publi da Viagem"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Patrocínio "Publi da Viagem"
+                    </h3>
+
+                    <p>
+
+                        Como boa social media e atriz,
+                        a Marina precisa de fundos
+                        para garantir as melhores locações,
+                        roteiros dramáticos
+                        e muito engajamento
+                        nos stories da lua de mel.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 100,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('100')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 150 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">🚐</div>
+
+                        <div class="fallback-text">
+                            Transporte Premium
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="van-confiavel.jpg"
+                        alt="Transporte Premium"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Cota "Transporte Premium"
+                    </h3>
+
+                    <p>
+
+                        Ajude-os a pagar
+                        o transporte naquela van
+                        bastante confiável,
+                        revisada em algum momento
+                        da história e com grandes chances
+                        de chegar ao destino.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 150,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('150')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 200 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">🏋️</div>
+
+                        <div class="fallback-text">
+                            Conserva-Shape
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="conserva-shape.jpg"
+                        alt="Cota Conserva-Shape"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Cota "Conserva-Shape"
+                    </h3>
+
+                    <p>
+
+                        Muita gente relaxa
+                        depois do casamento.
+
+
+                        Não deixe que isso
+                        aconteça conosco!
+
+
+                        Colabore para o pagamento
+                        da academia,
+                        manutenção do shape
+                        e para que a aliança
+                        seja a única coisa apertando.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 200,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('200')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 250 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">🎭</div>
+
+                        <div class="fallback-text">
+                            Bolsa-Fantasia
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="bolsa-fantasia.jpg"
+                        alt="Bolsa-Fantasia"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Cota "Bolsa-Fantasia"
+                    </h3>
+
+                    <p>
+
+                        Somos icônicos,
+                        fazemos festas temáticas
+                        e levamos fantasia muito a sério.
+
+
+                        O problema é que sustentar
+                        esse estilo de vida custa caro.
+
+
+                        Ajude-nos a manter
+                        nosso jeito icônico
+                        e os figurinos cada vez
+                        mais elaborados.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 250,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('250')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 500 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">🐐</div>
+
+                        <div class="fallback-text">
+                            Yoga com Cabras
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="yoga-cabras.jpg"
+                        alt="Yoga com Cabras"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Cota "Yoga com Cabras"
+                    </h3>
+
+                    <p>
+
+                        Marina descobriu
+                        que existe yoga com cabras
+                        e, desde então,
+                        isso virou um objetivo de vida.
+
+
+                        Ajude-a a realizar
+                        o sonho de encontrar paz interior
+                        enquanto uma cabra
+                        sobe nas costas dela.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 500,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('500')"
+                    >
+                        Presentear
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 1000 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">🏚️</div>
+
+                        <div class="fallback-text">
+                            Nossa Primeira Mansão
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="primeira-mansao.jpg"
+                        alt="Nossa Primeira Mansão"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Cota "Nossa Primeira Mansão"
+                    </h3>
+
+                    <p>
+
+                        Ajude-nos na compra
+                        da nossa primeira mansão.
+
+
+                        No momento,
+                        nosso padrão de luxo
+                        está mais próximo
+                        da casa do Cão Coragem:
+
+
+                        no meio do nada,
+                        assustadora,
+                        caindo aos pedaços
+                        e cheia de personalidade.
+
+
+                        Mas toda grande história
+                        de amor começa
+                        com um imóvel duvidoso.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 1.000,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('1000')"
+                    >
+                        Financiar a mansão
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 2000 -->
+
+            <article class="gift-card">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">🎥</div>
+
+                        <div class="fallback-text">
+                            Aquisição da Warner
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="comprar-warner.jpg"
+                        alt="Aquisição da Warner"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Cota "Aquisição da Warner"
+                    </h3>
+
+                    <p>
+
+                        A Warner está à venda
+                        e, sinceramente,
+                        alguém precisa tomar uma atitude.
+
+
+                        Contribua com nossa oferta
+                        de compra do estúdio.
+
+
+                        Ainda faltam alguns bilhões,
+                        mas toda aquisição hostil
+                        começa com um Pix
+                        e excesso de confiança.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        R$ 2.000,00
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('2000')"
+                    >
+                        Financiar a aquisição
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- VALOR LIVRE -->
+
+            <article class="gift-card full-width">
+
+                <div class="gift-image-wrapper">
+
+                    <div class="fallback">
+
+                        <div class="fallback-icon">♡</div>
+
+                        <div class="fallback-text">
+                            Compre um Lote no Nosso Coração
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="lote-coracao.jpg"
+                        alt="Compre um Lote no Nosso Coração"
+                        class="gift-img"
+                        onerror="this.style.display='none'"
+                    >
+
+                </div>
+
+
+                <div class="gift-info">
+
+                    <h3>
+                        Compre um Lote no Nosso Coração
+                    </h3>
+
+                    <p>
+
+                        Nosso coração ainda tem terrenos
+                        disponíveis para todos os públicos.
+
+
+                        A metragem varia pela contribuição:
+                        pode ser desde um cantinho aconchegante
+                        até uma verdadeira fazenda emocional.
+
+
+                        Escolha quanto quer investir
+                        e garanta seu espaço vitalício
+                        no coração dos noivos.
+
+
+                        <br><br>
+
+
+                        Escritura simbólica,
+                        IPTU emocional incluso
+                        e valorização garantida
+                        pela amizade.
+
+                    </p>
+
+                    <span class="gift-price-label">
+                        Valor da cota
+                    </span>
+
+                    <span class="gift-price">
+                        Você escolhe ♡
+                    </span>
+
+                    <button
+                        type="button"
+                        class="pix-button"
+                        onclick="abrirPix('sem_valor')"
+                    >
+                        Comprar meu lote
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     RODAPÉ
+========================================================= -->
+
+<footer>
+
+
+    <div
+        style="
+            color: var(--gold);
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        "
+    >
+        ✦
+    </div>
+
+
+    <p>
+
+        Obrigado por fazer parte
+        da nossa história.
+
+    </p>
+
+
+    <p class="signature">
+
+        Com carinho,
+        Flávio e Marina
+
+    </p>
+
+
+    <p class="footer-date">
+
+        21 · 11 · 2026
+
+    </p>
+
+
+</footer>
+
+
+
+<!-- =========================================================
+     MODAL PIX
+========================================================= -->
+
+<div
+    id="pixModal"
+    class="modal"
+    aria-hidden="true"
+>
+
+
+    <div class="modal-content">
+
+
+        <button
+            type="button"
+            class="close-btn"
+            onclick="fecharPix()"
+            aria-label="Fechar"
+        >
+            &times;
+        </button>
+
+
+        <span class="eyebrow">
+
+            Obrigado pelo carinho
+
+        </span>
+
+
+        <h2>
+
+            Presentear ✦
+
+        </h2>
+
+
+        <h3 id="modalGiftTitle"></h3>
+
+
+        <div id="modalGiftPrice"></div>
+
+
+        <p
+            class="modal-explanation"
+            id="modalExplanation"
+        ></p>
+
+
+        <!-- QR -->
+
+        <div class="qr-wrapper">
+
+            <img
+                id="modalQr"
+                class="qr-code-img"
+                src=""
+                alt="QR Code Pix"
+            >
+
+        </div>
+
+
+        <div class="pix-code-label">
+
+            Pix Copia e Cola
+
+        </div>
+
+
+        <!-- CÓDIGO -->
+
+        <div class="pix-code-container">
+
+
+            <input
+                type="text"
+                id="codigoPix"
+                readonly
+            >
+
+
+            <button
+                type="button"
+                class="pix-button"
+                id="copyPixBtn"
+                onclick="copiarPix()"
+            >
+
+                Copiar Pix
+
+            </button>
+
+
+        </div>
+
+
+        <div
+            class="copy-feedback"
+            id="copyFeedback"
+            role="status"
+            aria-live="polite"
+        >
+
+            Pix copiado ♡
+
+        </div>
+
+
+        <button
+            type="button"
+            class="pix-button thanks-button"
+            onclick="mostrarAgradecimento()"
+        >
+
+            Já contribuí ♡
+
+        </button>
+
+
+        <div
+            class="thanks-message"
+            id="thanksMessage"
+        >
+
+            ✦
+
+            <br><br>
+
+            Muito obrigado pelo carinho
+            e por fazer parte desse
+            novo capítulo da nossa história.
+
+            <br><br>
+
+            Sua contribuição certamente
+            renderá boas memórias,
+            decisões financeiras duvidosas
+            e muitas histórias para contar.
+
+            <br><br>
+
+            ♡
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<script>
+
+
+/* ==========================================================
+   DADOS DOS PIX
+========================================================== */
+
+const PIX = {
+
+
+    "20": {
+
+        titulo:
+            "Auxílio Skin do Fortnite",
+
+        valor:
+            "R$ 20,00",
+
+        qr:
+            "20.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+5561996516960520400005303986540520.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510PTadxUd0z66304A5AC"
+
+    },
+
+
+    "30": {
+
+        titulo:
+            "Nariz de Palhaço para a Marina",
+
+        valor:
+            "R$ 30,00",
+
+        qr:
+            "30.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+5561996516960520400005303986540530.005802BR5924Flavio dos Santos Barros6009SAO PAULO621405104BnINDPqGm6304C674"
+
+    },
+
+
+    "40": {
+
+        titulo:
+            'Cota "O Eterno Calouro"',
+
+        valor:
+            "R$ 40,00",
+
+        qr:
+            "40.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+5561996516960520400005303986540540.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510LRMehBCS446304531A"
+
+    },
+
+
+    "50": {
+
+        titulo:
+            'Cota "Terapia Pós-Sala de Aula"',
+
+        valor:
+            "R$ 50,00",
+
+        qr:
+            "50.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+5561996516960520400005303986540550.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510RKaJhtHU0363043D80"
+
+    },
+
+
+    "60": {
+
+        titulo:
+            'Cota "Curso Aleatório da Semana"',
+
+        valor:
+            "R$ 60,00",
+
+        qr:
+            "60.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+5561996516960520400005303986540560.005802BR5924Flavio dos Santos Barros6009SAO PAULO6214051003lR0qxCch6304BADB"
+
+    },
+
+
+    "75": {
+
+        titulo:
+            "Honorários por Pena",
+
+        valor:
+            "R$ 75,00",
+
+        qr:
+            "75.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+5561996516960520400005303986540575.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510arPHZpFllZ6304EB6A"
+
+    },
+
+
+    "85": {
+
+        titulo:
+            'Cota "Marina Se Perdeu"',
+
+        valor:
+            "R$ 85,00",
+
+        qr:
+            "85.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+5561996516960520400005303986540585.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510Otfjv3eeJU6304A70B"
+
+    },
+
+
+    "90": {
+
+        titulo:
+            'Cota "Casting Suspeito"',
+
+        valor:
+            "R$ 90,00",
+
+        qr:
+            "90.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+5561996516960520400005303986540590.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510W2WCGyAJqz6304F31C"
+
+    },
+
+
+    "100": {
+
+        titulo:
+            'Patrocínio "Publi da Viagem"',
+
+        valor:
+            "R$ 100,00",
+
+        qr:
+            "100.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+55619965169605204000053039865406100.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510QDkH3gB3Ep63049B31"
+
+    },
+
+
+    "150": {
+
+        titulo:
+            'Cota "Transporte Premium"',
+
+        valor:
+            "R$ 150,00",
+
+        qr:
+            "150.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+55619965169605204000053039865406150.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510L2TOcESKY663049FC9"
+
+    },
+
+
+    "200": {
+
+        titulo:
+            'Cota "Conserva-Shape"',
+
+        valor:
+            "R$ 200,00",
+
+        qr:
+            "200.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+55619965169605204000053039865406200.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510DSgkTFk9Zn63041849"
+
+    },
+
+
+    "250": {
+
+        titulo:
+            'Cota "Bolsa-Fantasia"',
+
+        valor:
+            "R$ 250,00",
+
+        qr:
+            "250.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+55619965169605204000053039865406250.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510eULUWp5mY463045464"
+
+    },
+
+
+    "500": {
+
+        titulo:
+            'Cota "Yoga com Cabras"',
+
+        valor:
+            "R$ 500,00",
+
+        qr:
+            "500.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+55619965169605204000053039865406500.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510C381NnPY2B630470D1"
+
+    },
+
+
+    "1000": {
+
+        titulo:
+            'Cota "Nossa Primeira Mansão"',
+
+        valor:
+            "R$ 1.000,00",
+
+        qr:
+            "1000.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+556199651696052040000530398654071000.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510HgRtUQY3hB6304BC86"
+
+    },
+
+
+    "2000": {
+
+        titulo:
+            'Cota "Aquisição da Warner"',
+
+        valor:
+            "R$ 2.000,00",
+
+        qr:
+            "2000.jpg",
+
+        codigo:
+            "00020126360014BR.GOV.BCB.PIX0114+556199651696052040000530398654072000.005802BR5924Flavio dos Santos Barros6009SAO PAULO62140510ukPAFUlJ646304FFAD"
+
+    },
+
+
+    "sem_valor": {
+
+        titulo:
+            "Compre um Lote no Nosso Coração",
+
+        valor:
+            "Valor livre",
+
+        qr:
+            "sem_valor.jpg",
+
+        codigo:
+            "00020126580014BR.GOV.BCB.PIX01369eec9c2f-3113-4bac-925d-c930d8d614f55204000053039865802BR5924Flavio dos Santos Barros6009SAO PAULO62140510mOMA9er8sP6304ED86"
+
+    }
+
+
+};
+
+
+
+/* ==========================================================
+   ELEMENTOS
+========================================================== */
+
+const modal =
+    document.getElementById(
+        "pixModal"
+    );
+
+
+const modalGiftTitle =
+    document.getElementById(
+        "modalGiftTitle"
+    );
+
+
+const modalGiftPrice =
+    document.getElementById(
+        "modalGiftPrice"
+    );
+
+
+const modalExplanation =
+    document.getElementById(
+        "modalExplanation"
+    );
+
+
+const modalQr =
+    document.getElementById(
+        "modalQr"
+    );
+
+
+const codigoPix =
+    document.getElementById(
+        "codigoPix"
+    );
+
+
+const copyPixBtn =
+    document.getElementById(
+        "copyPixBtn"
+    );
+
+
+const copyFeedback =
+    document.getElementById(
+        "copyFeedback"
+    );
+
+
+const thanksMessage =
+    document.getElementById(
+        "thanksMessage"
+    );
+
+
+
+/* ==========================================================
+   ABRIR PIX
+========================================================== */
+
+function abrirPix(chave) {
+
+
+    const item =
+        PIX[chave];
+
+
+    if (!item) {
+
+
+        alert(
+            "Não foi possível localizar esta cota."
+        );
+
+
+        return;
+
+
+    }
+
+
+
+    modalGiftTitle.textContent =
+        item.titulo;
+
+
+    modalGiftPrice.textContent =
+        item.valor;
+
+
+
+    if (
+        chave === "sem_valor"
+    ) {
+
+
+        modalExplanation.innerHTML =
+
+            "Este Pix não possui valor fixo. " +
+
+            "Escaneie o QR Code ou copie o código e " +
+
+            "<strong>escolha no aplicativo do banco o valor que deseja contribuir.</strong>";
+
+
+    }
+
+
+    else {
+
+
+        modalExplanation.innerHTML =
+
+            "Este Pix já está configurado para uma contribuição de " +
+
+            "<strong>" +
+
+            item.valor +
+
+            "</strong>.";
+
+
+    }
+
+
+
+    modalQr.src =
+        item.qr;
+
+
+    modalQr.alt =
+        "QR Code Pix - " +
+        item.titulo;
+
+
+    codigoPix.value =
+        item.codigo;
+
+
+    copyPixBtn.textContent =
+        "Copiar Pix";
+
+
+    copyFeedback.classList.remove(
+        "visible"
+    );
+
+
+    thanksMessage.classList.remove(
+        "show"
+    );
+
+
+    modal.classList.add(
+        "open"
+    );
+
+
+    modal.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+
+    document.body.style.overflow =
+        "hidden";
+
+
+}
+
+
+
+/* ==========================================================
+   FECHAR PIX
+========================================================== */
+
+function fecharPix() {
+
+
+    modal.classList.remove(
+        "open"
+    );
+
+
+    modal.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+
+    document.body.style.overflow =
+        "";
+
+
+}
+
+
+
+/* CLICAR FORA */
+
+modal.addEventListener(
+    "click",
+    function(event) {
+
+
+        if (
+            event.target === modal
+        ) {
+
+
+            fecharPix();
+
+
+        }
+
+
+    }
+);
+
+
+
+/* ESC */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+
+        if (
+            event.key === "Escape"
+            &&
+            modal.classList.contains("open")
+        ) {
+
+
+            fecharPix();
+
+
+        }
+
+
+    }
+);
+
+
+
+/* ==========================================================
+   COPIAR PIX
+========================================================== */
+
+async function copiarPix() {
+
+
+    const codigo =
+        codigoPix.value;
+
+
+    if (!codigo) {
+        return;
+    }
+
+
+    try {
+
+
+        await navigator.clipboard
+            .writeText(codigo);
+
+
+        mostrarPixCopiado();
+
+
+    }
+
+
+    catch (error) {
+
+
+        codigoPix.select();
+
+
+        codigoPix.setSelectionRange(
+            0,
+            99999
+        );
+
+
+        document.execCommand(
+            "copy"
+        );
+
+
+        mostrarPixCopiado();
+
+
+    }
+
+
+}
+
+
+
+function mostrarPixCopiado() {
+
+
+    copyPixBtn.textContent =
+        "Copiado ✓";
+
+
+    copyFeedback.classList.add(
+        "visible"
+    );
+
+
+    setTimeout(
+        function() {
+
+
+            copyPixBtn.textContent =
+                "Copiar Pix";
+
+
+            copyFeedback.classList.remove(
+                "visible"
+            );
+
+
+        },
+        2500
+    );
+
+
+}
+
+
+
+/* ==========================================================
+   AGRADECIMENTO
+========================================================== */
+
+function mostrarAgradecimento() {
+
+
+    thanksMessage.classList.add(
+        "show"
+    );
+
+
+    thanksMessage.scrollIntoView({
+
+        behavior:
+            "smooth",
+
+        block:
+            "nearest"
+
+    });
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
