@@ -79,6 +79,9 @@
 
         html {
             scroll-behavior: smooth;
+
+            /* Aumenta todos os textos do site (base em rem) */
+            font-size: 112.5%;
         }
 
 
@@ -579,6 +582,210 @@
                     216,
                     0.58
                 );
+
+        }
+
+
+        /* =====================================================
+           MAPA CLICÁVEL
+        ===================================================== */
+
+        .map-preview {
+
+            display: block;
+
+            width: min(322px, 100%);
+
+            margin: 14px auto 0;
+
+            border:
+                1px solid
+                rgba(216, 173, 85, 0.45);
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+            box-shadow: var(--shadow);
+
+            transition: 0.2s ease;
+
+        }
+
+
+        .map-preview img {
+
+            display: block;
+
+            width: 100%;
+
+            height: auto;
+
+        }
+
+
+        .map-preview:hover {
+
+            border-color: var(--gold);
+
+            transform: translateY(-2px);
+
+        }
+
+
+        /* =====================================================
+           DESTAQUE DO HORÁRIO DE CHEGADA
+        ===================================================== */
+
+        .arrival-badge {
+
+            display: inline-block;
+
+            padding: 6px 16px;
+
+            border:
+                1px solid
+                var(--gold);
+
+            border-radius: 999px;
+
+            background:
+                rgba(216, 173, 85, 0.12);
+
+            color: var(--white-soft);
+
+        }
+
+
+        .arrival-badge > span {
+
+            white-space: nowrap;
+
+        }
+
+
+        .arrival-sep {
+
+            margin: 0 6px;
+
+        }
+
+
+        @media (max-width: 720px) {
+
+            .arrival-badge {
+
+                display: flex;
+
+                flex-direction: column;
+
+                line-height: 1.8;
+
+                border-radius: 14px;
+
+            }
+
+            .arrival-sep {
+
+                display: none;
+
+            }
+
+        }
+
+
+        .arrival-badge strong {
+
+            color: var(--gold-light);
+
+            font-weight: 600;
+
+        }
+
+
+        .arrival-highlight {
+
+            max-width: 760px;
+
+            margin: 0 auto 40px;
+
+            padding: 28px 26px;
+
+            text-align: center;
+
+            border: 2px solid var(--gold);
+
+            border-radius: 14px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(169, 79, 43, 0.35),
+                    rgba(21, 23, 46, 0.70)
+                );
+
+            box-shadow: var(--shadow);
+
+        }
+
+
+        .arrival-highlight-label {
+
+            display: block;
+
+            margin-bottom: 8px;
+
+            font-family:
+                "Josefin Sans",
+                sans-serif;
+
+            font-size: 0.78rem;
+
+            letter-spacing: 0.22em;
+
+            text-transform: uppercase;
+
+            color: var(--gold-light);
+
+        }
+
+
+        .arrival-highlight-time {
+
+            margin: 0 0 12px;
+
+            font-size: 2.1rem;
+
+            line-height: 1.2;
+
+            color: var(--white-soft);
+
+        }
+
+
+        .arrival-highlight-time strong {
+
+            color: var(--gold-light);
+
+        }
+
+
+        .arrival-highlight p:last-child {
+
+            margin: 0;
+
+            font-size: 1.15rem;
+
+            line-height: 1.65;
+
+        }
+
+
+        /* Card que ocupa a largura toda da grade */
+
+        .card-wide {
+
+            grid-column: 1 / -1;
 
         }
 
@@ -1908,7 +2115,7 @@
                     13px 10px;
 
                 font-size:
-                    0.61rem;
+                    0.68rem;
 
                 letter-spacing:
                     0.07em;
@@ -2065,7 +2272,11 @@
         >
 
 
-            Cerimônia às 17:00
+            <span class="arrival-badge">
+                <span>Chegada até <strong>16:30</strong></span>
+                <span class="arrival-sep" aria-hidden="true">·</span>
+                <span>Cerimônia às <strong>17:00</strong></span>
+            </span>
 
 
             <br>
@@ -2087,6 +2298,27 @@
 
 
                 Villa Trésor · Brasília
+
+            </a>
+
+
+            <a
+                class="map-preview"
+
+                href="https://www.google.com/maps/search/?api=1&query=Villa+Tresor+Gleba+12%2F14+Lote+01+Ponte+Alta+Norte+Gama+Brasilia+DF+72427-010"
+
+                target="_blank"
+
+                rel="noopener noreferrer"
+
+                aria-label="Abrir a localização da Villa Trésor no Google Maps"
+            >
+
+                <img
+                    src="mapa-villa-tresor.png"
+                    alt="Mapa com a localização da Villa Trésor"
+                    loading="lazy"
+                >
 
             </a>
 
@@ -2137,7 +2369,11 @@
             </a>
 
 
-            <a href="#local">
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Villa+Tresor+Gleba+12%2F14+Lote+01+Ponte+Alta+Norte+Gama+Brasilia+DF+72427-010"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
 
                 <span>⌖</span>
 
@@ -2200,6 +2436,31 @@
 
 
 
+        <!-- DESTAQUE: HORÁRIO DE CHEGADA -->
+
+        <div class="arrival-highlight">
+
+            <span class="arrival-highlight-label">
+                Atenção ao horário
+            </span>
+
+            <p class="arrival-highlight-time">
+                Chegue até as <strong>16:30</strong>
+            </p>
+
+            <p>
+                A cerimônia começa pontualmente às
+                <strong>17:00</strong>.
+                Pedimos que todos cheguem
+                <strong>no máximo até as 16:30</strong>
+                para que haja tempo de se acomodar
+                e de tudo começar no horário.
+            </p>
+
+        </div>
+
+
+
         <div class="cards">
 
 
@@ -2228,18 +2489,15 @@
                     </strong>
 
 
-                    Recomendamos chegar
-                    com ao menos
+                    Os convidados devem chegar
 
                     <strong>
-                        30 minutos de antecedência,
+                        no máximo até as 16:30,
                     </strong>
 
-                    por volta de
-
-                    <strong>
-                        16:30.
-                    </strong>
+                    para que todos possam
+                    se organizar com calma
+                    antes do início.
 
 
                     A festa será encerrada
@@ -2383,20 +2641,27 @@
 
                 <p>
 
-                    Queremos que todos estejam
-                    confortáveis e elegantes,
-                    mas lembramos que as cores
+                    O traje é
 
                     <strong>
-                        branca, marfim e off-white
+                        esporte fino ou social.
                     </strong>
 
-                    são de uso exclusivo
+
+                    Pedimos, em especial às convidadas,
+                    que
+
+                    <strong>
+                        evitem cores claras,
+                    </strong>
+
+                    pois o branco, o marfim, o off-white
+                    e tons próximos são de uso exclusivo
                     da noiva Zira.
 
 
                     Capriche no look
-                    e deixe o branco com ela!
+                    e deixe os tons claros com ela!
 
                 </p>
 
@@ -2444,6 +2709,40 @@
                         celebrar esse momento
                         com a gente!
                     </strong>
+
+                </p>
+
+
+            </article>
+
+
+
+            <!-- MESAS -->
+
+            <article class="card card-wide">
+
+
+                <div class="card-icon">
+                    ◈
+                </div>
+
+
+                <h3>
+                    Mesas no Salão
+                </h3>
+
+
+                <p>
+
+                    Fizemos uma designação de mesas no salão
+                    apenas por formalidade.
+
+                    <strong>
+                        Ao chegarem, fiquem à vontade
+                        para mudar de mesa
+                    </strong>
+
+                    e sentar perto de quem quiserem.
 
                 </p>
 
@@ -2587,17 +2886,31 @@
 
         <div class="gift-notice">
 
-            Cada cota possui seu próprio Pix,
-            já configurado com o valor indicado.
+            <strong>
+                As cotas são só uma brincadeira!
+            </strong>
+
+            Os nomes e as histórias são de mentirinha:
+            no fim, toda cota é simplesmente
+
+            <strong>
+                um Pix para os noivos no valor indicado,
+            </strong>
+
+            já configurado em cada uma.
 
 
+            <br><br>
+
+
+            Prefere escolher quanto dar?
             Na última opção,
 
             <strong>
-                "Lote no Nosso Coração",
+                "Compre um Lote no Nosso Coração",
             </strong>
 
-            o valor é livre.
+            você define o valor que quiser.
 
         </div>
 
