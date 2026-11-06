@@ -82,6 +82,11 @@
 
             /* Aumenta todos os textos do site (base em rem) */
             font-size: 112.5%;
+
+            /* Evita a faixa branca ao puxar a página além do fim */
+            background-color: #b95d29;
+
+            overscroll-behavior-y: none;
         }
 
 
@@ -92,6 +97,8 @@
             min-height: 100vh;
 
             overflow-x: hidden;
+
+            overscroll-behavior-y: none;
 
             color: var(--cream);
 
@@ -594,9 +601,9 @@
 
             display: block;
 
-            width: min(322px, 100%);
+            width: min(340px, 100%);
 
-            margin: 14px auto 0;
+            margin: 16px auto 0;
 
             border:
                 1px solid
@@ -640,6 +647,8 @@
         .arrival-badge {
 
             display: inline-block;
+
+            margin-bottom: 18px;
 
             padding: 6px 16px;
 
@@ -781,6 +790,28 @@
         }
 
 
+        /* Link para Pix de valor livre */
+
+        .choose-value-link {
+
+            color: var(--gold-light);
+
+            font-weight: 600;
+
+            text-decoration: underline;
+
+            text-underline-offset: 3px;
+
+        }
+
+
+        .choose-value-link:hover {
+
+            color: var(--white-soft);
+
+        }
+
+
         /* Card que ocupa a largura toda da grade */
 
         .card-wide {
@@ -798,12 +829,19 @@
 
             width:
                 min(
-                    760px,
-                    100%
+                    1000px,
+                    calc(100vw - 32px)
                 );
 
+            /* Sai da coluna de 800px do topo para caber em uma linha */
+            position: relative;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
             margin:
-                38px auto 0;
+                38px 0 0;
 
             display: flex;
 
@@ -819,7 +857,7 @@
 
         .quick-nav a {
 
-            min-width: 150px;
+            min-width: 170px;
 
             display:
                 inline-flex;
@@ -831,7 +869,7 @@
             gap: 8px;
 
             padding:
-                13px 17px;
+                15px 22px;
 
             border:
                 1px solid
@@ -861,7 +899,7 @@
                 "Josefin Sans",
                 sans-serif;
 
-            font-size: 0.68rem;
+            font-size: 0.82rem;
 
             font-weight: 400;
 
@@ -2091,6 +2129,10 @@
 
             .quick-nav {
 
+                left: auto;
+
+                transform: none;
+
                 width:
                     100%;
 
@@ -2392,6 +2434,75 @@
 
 
 <main>
+
+
+<!-- =========================================================
+     RSVP
+========================================================= -->
+
+<section
+    class="rsvp-section"
+    id="rsvp"
+>
+
+
+    <div class="page">
+
+
+        <div class="rsvp-box">
+
+
+            <span class="eyebrow">
+
+                RSVP
+
+            </span>
+
+
+            <h2>
+
+                Confirme sua presença
+
+            </h2>
+
+
+            <p>
+
+                Para conseguirmos organizar
+                cada detalhe da celebração,
+                pedimos que preencha
+                nossa lista de presença até
+
+                <strong>
+                    1º de novembro de 2026.
+                </strong>
+
+            </p>
+
+
+            <a
+                class="rsvp-button"
+
+                href="https://docs.google.com/forms/d/e/1FAIpQLSev9UWf7hlBRvkuIJUYCbwd8kophoM95V7GAm-1DcvYAnLpkQ/viewform?usp=dialog"
+
+                target="_blank"
+
+                rel="noopener noreferrer"
+            >
+
+                ✓ Confirmar minha presença
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
 
 
 <!-- =========================================================
@@ -2760,75 +2871,6 @@
 
 
 <!-- =========================================================
-     RSVP
-========================================================= -->
-
-<section
-    class="rsvp-section"
-    id="rsvp"
->
-
-
-    <div class="page">
-
-
-        <div class="rsvp-box">
-
-
-            <span class="eyebrow">
-
-                RSVP
-
-            </span>
-
-
-            <h2>
-
-                Confirme sua presença
-
-            </h2>
-
-
-            <p>
-
-                Para conseguirmos organizar
-                cada detalhe da celebração,
-                pedimos que preencha
-                nossa lista de presença até
-
-                <strong>
-                    1º de novembro de 2026.
-                </strong>
-
-            </p>
-
-
-            <a
-                class="rsvp-button"
-
-                href="https://docs.google.com/forms/d/e/1FAIpQLSev9UWf7hlBRvkuIJUYCbwd8kophoM95V7GAm-1DcvYAnLpkQ/viewform?usp=dialog"
-
-                target="_blank"
-
-                rel="noopener noreferrer"
-            >
-
-                ✓ Confirmar minha presença
-
-            </a>
-
-
-        </div>
-
-
-    </div>
-
-
-</section>
-
-
-
-<!-- =========================================================
      COTAS
 ========================================================= -->
 
@@ -2875,7 +2917,13 @@
                 com algumas das prioridades
                 financeiras extremamente sérias
                 do nosso casamento,
-                escolham uma cota abaixo.
+                escolham uma cota abaixo
+
+                <a
+                    href="#"
+                    class="choose-value-link"
+                    onclick="abrirPix('sem_valor'); return false;"
+                >ou clique aqui para escolher um valor</a>.
 
             </p>
 
