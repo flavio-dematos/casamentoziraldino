@@ -1225,6 +1225,8 @@
         ===================================================== */
 
         #manual,
+        #mesas,
+        #cardapio,
         #presentes,
         #local {
 
@@ -2246,6 +2248,430 @@
 
         }
 
+
+        /* =====================================================
+           MESAS
+        ===================================================== */
+
+        .tables-section {
+
+            padding-top: 40px;
+
+        }
+
+
+        .tables-notice {
+
+            max-width: 760px;
+
+            margin: 0 auto 34px;
+
+            padding: 24px 26px;
+
+            text-align: center;
+
+            border: 2px solid var(--gold);
+
+            border-radius: 14px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(169, 79, 43, 0.30),
+                    rgba(21, 23, 46, 0.70)
+                );
+
+            box-shadow: var(--shadow);
+
+            font-size: 1.15rem;
+
+            line-height: 1.65;
+
+        }
+
+
+        .tables-notice strong {
+
+            color: var(--gold-light);
+
+        }
+
+
+        .table-search {
+
+            max-width: 520px;
+
+            margin: 0 auto 40px;
+
+            text-align: center;
+
+        }
+
+
+        .table-search label {
+
+            display: block;
+
+            margin-bottom: 10px;
+
+            font-family: "Josefin Sans", sans-serif;
+
+            font-size: 0.78rem;
+
+            letter-spacing: 0.22em;
+
+            text-transform: uppercase;
+
+            color: var(--gold);
+
+        }
+
+
+        .table-search input {
+
+            width: 100%;
+
+            box-sizing: border-box;
+
+            padding: 14px 20px;
+
+            border: 1px solid rgba(216, 173, 85, 0.45);
+
+            border-radius: 999px;
+
+            background: rgba(21, 23, 46, 0.60);
+
+            color: var(--white-soft);
+
+            font-family: "Cormorant Garamond", Georgia, serif;
+
+            font-size: 1.15rem;
+
+            text-align: center;
+
+            outline: none;
+
+        }
+
+
+        .table-search input:focus {
+
+            border-color: var(--gold);
+
+        }
+
+
+        .table-search input::placeholder {
+
+            color: rgba(244, 233, 216, 0.45);
+
+        }
+
+
+        .table-search-result {
+
+            min-height: 1.6em;
+
+            margin: 12px 0 0;
+
+            font-size: 1.1rem;
+
+            color: var(--gold-light);
+
+        }
+
+
+        .tables-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            gap: 20px;
+
+        }
+
+
+        .table-card {
+
+            padding: 26px 26px 22px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 8px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(37, 32, 58, 0.84),
+                    rgba(21, 23, 46, 0.76)
+                );
+
+            box-shadow: var(--shadow);
+
+            transition: 0.25s ease;
+
+        }
+
+
+        .table-card-family {
+
+            border-color: rgba(216, 173, 85, 0.55);
+
+        }
+
+
+        .table-card h3 {
+
+            margin-bottom: 14px;
+
+            padding-bottom: 12px;
+
+            border-bottom: 1px solid rgba(216, 173, 85, 0.25);
+
+            font-family: "Josefin Sans", sans-serif;
+
+            font-size: 1rem;
+
+            font-weight: 400;
+
+            letter-spacing: 0.14em;
+
+            text-transform: uppercase;
+
+            color: var(--gold-light);
+
+        }
+
+
+        .table-card ul,
+        .menu-card ul {
+
+            margin: 0;
+
+            padding: 0;
+
+            list-style: none;
+
+        }
+
+
+        .table-card li {
+
+            padding: 4px 8px;
+
+            border-radius: 4px;
+
+            font-size: 1.08rem;
+
+            line-height: 1.45;
+
+            color: rgba(255, 250, 241, 0.88);
+
+            transition: 0.2s ease;
+
+        }
+
+
+        .table-card li.is-match {
+
+            background: rgba(216, 173, 85, 0.22);
+
+            color: var(--white-soft);
+
+            font-weight: 600;
+
+        }
+
+
+        .table-card.is-dim {
+
+            opacity: 0.35;
+
+        }
+
+
+        .table-card.is-hit {
+
+            border-color: var(--gold);
+
+            transform: translateY(-3px);
+
+        }
+
+
+        /* =====================================================
+           CARDÁPIO
+        ===================================================== */
+
+        .menu-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            gap: 22px;
+
+        }
+
+
+        .menu-card {
+
+            padding: 34px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 8px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(37, 32, 58, 0.84),
+                    rgba(21, 23, 46, 0.76)
+                );
+
+            box-shadow: var(--shadow);
+
+            backdrop-filter: blur(10px);
+
+        }
+
+
+        .menu-card-wide {
+
+            grid-column: 1 / -1;
+
+            text-align: center;
+
+        }
+
+
+        .menu-card-wide .card-icon {
+
+            margin-left: auto;
+
+            margin-right: auto;
+
+        }
+
+
+        .menu-card-wide ul {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 4px 0;
+
+        }
+
+
+        .menu-card-wide li + li::before {
+
+            content: "·";
+
+            margin: 0 14px;
+
+            color: var(--gold);
+
+        }
+
+
+        .menu-card h3 {
+
+            margin-bottom: 16px;
+
+            font-family: "Josefin Sans", sans-serif;
+
+            font-size: 1.05rem;
+
+            font-weight: 400;
+
+            letter-spacing: 0.12em;
+
+            text-transform: uppercase;
+
+            color: var(--gold-light);
+
+        }
+
+
+        .menu-card li {
+
+            padding: 6px 0;
+
+            font-size: 1.15rem;
+
+            line-height: 1.45;
+
+            color: rgba(255, 250, 241, 0.88);
+
+        }
+
+
+        .menu-card:not(.menu-card-wide) li + li {
+
+            border-top: 1px dashed rgba(216, 173, 85, 0.18);
+
+        }
+
+
+        @media (max-width: 950px) {
+
+            .tables-grid {
+
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            }
+
+        }
+
+
+        @media (max-width: 720px) {
+
+            .tables-grid,
+            .menu-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .menu-card,
+            .table-card {
+
+                padding: 26px 22px;
+
+            }
+
+            .table-card.is-dim {
+
+                display: none;
+
+            }
+
+            .quick-nav a:last-child:nth-child(odd) {
+
+                grid-column: 1 / -1;
+
+            }
+
+            .menu-card-wide ul {
+
+                display: block;
+
+            }
+
+            .menu-card-wide li + li::before {
+
+                content: none;
+
+            }
+
+        }
+
+
     </style>
 
 </head>
@@ -2393,11 +2819,20 @@
             </a>
 
 
-            <a href="#rsvp">
+            <a href="#mesas">
 
-                <span>✓</span>
+                <span>◈</span>
 
-                Confirmar presença
+                Mesas
+
+            </a>
+
+
+            <a href="#cardapio">
+
+                <span>✧</span>
+
+                Cardápio
 
             </a>
 
@@ -2437,69 +2872,286 @@
 
 
 <!-- =========================================================
-     RSVP
+     MESAS
 ========================================================= -->
 
 <section
-    class="rsvp-section"
-    id="rsvp"
+    class="section tables-section"
+    id="mesas"
 >
-
 
     <div class="page">
 
 
-        <div class="rsvp-box">
-
+        <div class="section-heading">
 
             <span class="eyebrow">
-
-                RSVP
-
+                Onde sentar
             </span>
 
-
             <h2>
-
-                Confirme sua presença
-
+                Mesas no Salão
             </h2>
 
+            <div class="ornament">
+                <span>✦</span>
+            </div>
 
-            <p>
-
-                Para conseguirmos organizar
-                cada detalhe da celebração,
-                pedimos que preencha
-                nossa lista de presença até
-
-                <strong>
-                    1º de novembro de 2026.
-                </strong>
-
-            </p>
+        </div>
 
 
-            <a
-                class="rsvp-button"
+        <div class="tables-notice">
 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSev9UWf7hlBRvkuIJUYCbwd8kophoM95V7GAm-1DcvYAnLpkQ/viewform?usp=dialog"
+            <strong>
+                A designação de mesas é puro formalismo.
+            </strong>
 
-                target="_blank"
+            Organizamos esta lista só para facilitar,
+            mas, ao chegarem,
 
-                rel="noopener noreferrer"
+            <strong>
+                todos têm total liberdade para mudar de mesa
+            </strong>
+
+            e sentar perto de quem quiserem.
+
+        </div>
+
+
+        <div class="table-search">
+
+            <label for="tableSearch">
+                Procure seu nome
+            </label>
+
+            <input
+                type="search"
+                id="tableSearch"
+                placeholder="Digite seu nome…"
+                autocomplete="off"
+                oninput="buscarMesa(this.value)"
             >
 
-                ✓ Confirmar minha presença
+            <p
+                id="tableSearchResult"
+                class="table-search-result"
+                aria-live="polite"
+            ></p>
 
-            </a>
+        </div>
 
+
+        <div class="tables-grid">
+
+                <article class="table-card table-card-family">
+
+                    <h3>Família da Noiva</h3>
+
+                    <ul>
+                        <li>Maria de Fátima da Cruz Daniel</li>
+                        <li>Guilherme Duarte de Freitas</li>
+                        <li>Daniel Cruz de Freitas</li>
+                        <li>Virginia Borges Daniel</li>
+                        <li>João Guilherme Basse</li>
+                        <li>Tatiana Daniel</li>
+                        <li>Vitor Daniel</li>
+                        <li>Helena Daniel</li>
+                        <li>Ravi Daniel</li>
+                    </ul>
+
+                </article>
+                <article class="table-card table-card-family">
+
+                    <h3>Família do Noivo</h3>
+
+                    <ul>
+                        <li>Cristiano Barros de Matos</li>
+                        <li>Clarice dos Santos Inácio</li>
+                        <li>Thaise Tscha</li>
+                        <li>Antonny Tscha</li>
+                        <li>Isabela</li>
+                        <li>Edvaldo Inacio dos Santos</li>
+                        <li>Leire Neiva Costa dos Santos</li>
+                        <li>Hildebrando Cerqueira Medeiros</li>
+                        <li>Cleudia Inácio dos Santos Medeiros</li>
+                    </ul>
+
+                </article>
+                <article class="table-card">
+
+                    <h3>Mesa 1</h3>
+
+                    <ul>
+                        <li>Chris Keül</li>
+                        <li>Adriano Duarte de Freitas</li>
+                        <li>Edna Russo</li>
+                        <li>Victor Keul</li>
+                        <li>Bruno Keül Duarte de Freitas</li>
+                        <li>Camila Masão Athayde</li>
+                        <li>Bruno Sérgio do Amaral</li>
+                        <li>Lara Lemos de Souza</li>
+                    </ul>
+
+                </article>
+                <article class="table-card">
+
+                    <h3>Mesa 2</h3>
+
+                    <ul>
+                        <li>Victoria Cavalcante</li>
+                        <li>Ana Beatryz Rocha</li>
+                        <li>Vitória Antony Gomes de Matos da Costa e Silva</li>
+                        <li>Luis Humberto Monteiro Beltrão Lima</li>
+                        <li>Lara Silvares</li>
+                        <li>Bruna Oliveira de Castro Lima</li>
+                        <li>Luana de Moura Costa</li>
+                        <li>Larissa Maria Gonçalves Rocha</li>
+                        <li>Ketlen Fernanda dos Santos Melo</li>
+                        <li>Gabriela Martins Santos</li>
+                    </ul>
+
+                </article>
+                <article class="table-card">
+
+                    <h3>Mesa 3</h3>
+
+                    <ul>
+                        <li>Lídia Camarão Paiva</li>
+                        <li>Matheus dos Reis Lima</li>
+                        <li>Lucas Trichez Brandão</li>
+                        <li>Manuela Gonzaga Morais Nogueira</li>
+                        <li>Gleyce Santos Lima</li>
+                        <li>Kathlen Amado</li>
+                        <li>Caroline Gonçalves Padilha Sette</li>
+                        <li>Fernando Fernandes Valle</li>
+                        <li>Robertha Alves de Souza Pierote</li>
+                    </ul>
+
+                </article>
+                <article class="table-card">
+
+                    <h3>Mesa 4</h3>
+
+                    <ul>
+                        <li>Érica Sant&#x27;Anna de Matos</li>
+                        <li>Mariza Santanna Moncayo</li>
+                        <li>Victor SantAnna de Matos</li>
+                        <li>Emily Mayara de Carvalho Alves</li>
+                        <li>Regina Barros Chacur Politano</li>
+                        <li>Sônia Maria Barros</li>
+                        <li>Maria de Fatima Barros Pimenta</li>
+                        <li>Kleber Silveira Pimenta</li>
+                    </ul>
+
+                </article>
+                <article class="table-card">
+
+                    <h3>Mesa 5</h3>
+
+                    <ul>
+                        <li>Rosana Blanke Piva</li>
+                        <li>James Theodoro da Silva</li>
+                        <li>Arthur Piva Lima</li>
+                        <li>Soraia Andrade de Lima Formiga</li>
+                        <li>Fábio de Oliveira Nobre Formiga</li>
+                        <li>Mônica</li>
+                        <li>Charles</li>
+                        <li>Vania Betat</li>
+                        <li>Silvio Betat</li>
+                    </ul>
+
+                </article>
+                <article class="table-card">
+
+                    <h3>Mesa 6</h3>
+
+                    <ul>
+                        <li>Lene Regina de O. Pontes Netto</li>
+                        <li>Ricardo Franco Pontes Netto</li>
+                        <li>Mariana de Oliveira Pontes Netto</li>
+                        <li>Gabriel de Oliveira Pontes Netto</li>
+                        <li>Fábio Antonio de Faria</li>
+                        <li>Solange Cabral Bombonato</li>
+                        <li>Ivone de Andrade Vieira</li>
+                        <li>Cássia Ribeiro</li>
+                        <li>Fernando Duarte de Freitas</li>
+                        <li>Sérgio Daniel</li>
+                    </ul>
+
+                </article>
+                <article class="table-card">
+
+                    <h3>Mesa 7</h3>
+
+                    <ul>
+                        <li>Júlia Barreto Cavalcante do Amaral</li>
+                        <li>Gabriel França Ferreira</li>
+                        <li>Milene Vieira</li>
+                        <li>Vitória Brandão Barros</li>
+                        <li>Vitória Luiza Alves Calmon</li>
+                        <li>Vinicius Silva Sampaio</li>
+                        <li>Ana Luiza Chaves</li>
+                        <li>Leonam Jônatas Soares Oliveira</li>
+                        <li>Gabriela Macêdo Borges</li>
+                    </ul>
+
+                </article>
+                <article class="table-card">
+
+                    <h3>Mesa 8</h3>
+
+                    <ul>
+                        <li>Bruno Rabelo Nogueira</li>
+                        <li>Luma Andressa Gonçalves Holanda</li>
+                        <li>Gabriel Costa Santana</li>
+                        <li>Larissa Bonilha Klein</li>
+                        <li>Caio dos Santos Alves</li>
+                        <li>Henrique Luz</li>
+                        <li>Mariana Martins Batista Dias</li>
+                        <li>Vinícius Alves Rodrigues de Matos</li>
+                        <li>Talyssa Novellino</li>
+                        <li>Igor Lino Resina</li>
+                    </ul>
+
+                </article>
+                <article class="table-card">
+
+                    <h3>Mesa 9</h3>
+
+                    <ul>
+                        <li>Filipe Cerqueira dos Santos</li>
+                        <li>Thiago Cerqueira dos Santos</li>
+                        <li>Larisse Oliveira</li>
+                        <li>Klícia Cerqueira dos Santos Alves</li>
+                        <li>Marcus Luís Alves Silva</li>
+                        <li>Pietro Alves dos Santos</li>
+                        <li>Sarah Oliveira Lima</li>
+                        <li>Arão Oliveira Cortez</li>
+                        <li>Leonardo Inacio Santos</li>
+                    </ul>
+
+                </article>
+                <article class="table-card">
+
+                    <h3>Mesa 10</h3>
+
+                    <ul>
+                        <li>Leire Ane Inacio Santos</li>
+                        <li>Ellen Inacio Santos</li>
+                        <li>Wallyson Lobo</li>
+                        <li>Delson Inácio dos Santos</li>
+                        <li>Fernanda Santos Nogueira</li>
+                        <li>Ramon Rodrigues Gomes</li>
+                        <li>Raquel Inácio dos Santos</li>
+                        <li>Thiele Araujo dos Santos</li>
+                    </ul>
+
+                </article>
 
         </div>
 
 
     </div>
-
 
 </section>
 
@@ -2617,44 +3269,6 @@
                     <strong>
                         23:00.
                     </strong>
-
-                </p>
-
-
-            </article>
-
-
-
-            <!-- RSVP -->
-
-            <article class="card">
-
-
-                <div class="card-icon">
-                    ✓
-                </div>
-
-
-                <h3>
-                    Confirmação de Presença
-                </h3>
-
-
-                <p>
-
-                    Sua confirmação é muito
-                    importante para organizarmos
-                    tudo com carinho.
-
-
-                    Pedimos que confirme
-                    sua presença até
-
-                    <strong>
-                        1º de novembro de 2026,
-                    </strong>
-
-                    20 dias antes do casamento.
 
                 </p>
 
@@ -2830,7 +3444,7 @@
 
             <!-- MESAS -->
 
-            <article class="card card-wide">
+            <article class="card">
 
 
                 <div class="card-icon">
@@ -2855,11 +3469,160 @@
 
                     e sentar perto de quem quiserem.
 
+                    <a href="#mesas" class="choose-value-link">
+                        Ver as mesas
+                    </a>
+
                 </p>
 
 
             </article>
 
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CARDÁPIO
+========================================================= -->
+
+<section
+    class="section"
+    id="cardapio"
+>
+
+    <div class="page">
+
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                Para saborear
+            </span>
+
+            <h2>
+                Cardápio
+            </h2>
+
+            <div class="ornament">
+                <span>✦</span>
+            </div>
+
+            <p class="section-description">
+                Preparamos um menu especial
+                para celebrar com vocês.
+                A festa vai das <strong>18:00</strong>
+                às <strong>23:00</strong>.
+            </p>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+                <article class="menu-card">
+
+                    <div class="card-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Salgados & Folhados
+                    </h3>
+
+                    <ul>
+                        <li>Mix de salgados</li>
+                        <li>Folhado de frango com azeitonas</li>
+                        <li>Folhado de castanha com mel</li>
+                        <li>Folhado de tomate seco com ricota</li>
+                        <li>Folhado de carne seca com aipim</li>
+                    </ul>
+
+                </article>
+                <article class="menu-card">
+
+                    <div class="card-icon">
+                        ✧
+                    </div>
+
+                    <h3>
+                        Entradinhas
+                    </h3>
+
+                    <ul>
+                        <li>Tortilha brasileira</li>
+                        <li>Mini bruschetta de antepasto de berinjela</li>
+                        <li>Manga com salaminho</li>
+                        <li>Croquete de linguiça apimentada</li>
+                        <li>Tartelete de doce de leite</li>
+                        <li>Caldo de cana com pastel de carne</li>
+                    </ul>
+
+                </article>
+                <article class="menu-card">
+
+                    <div class="card-icon">
+                        ◈
+                    </div>
+
+                    <h3>
+                        Empratados
+                    </h3>
+
+                    <ul>
+                        <li>Frango xadrez</li>
+                        <li>Filé mignon ao molho Dijon com arroz</li>
+                        <li>Kani com manga</li>
+                        <li>Mini penne ao gorgonzola com nozes</li>
+                        <li>Bobó de camarão</li>
+                        <li>Risoto de tomate seco com ricota</li>
+                        <li>Musseline de mandioca com shimeji</li>
+                    </ul>
+
+                </article>
+                <article class="menu-card">
+
+                    <div class="card-icon">
+                        ☀
+                    </div>
+
+                    <h3>
+                        Sucos & Coquetéis
+                    </h3>
+
+                    <ul>
+                        <li>Suco de melancia</li>
+                        <li>Suco de maracujá</li>
+                        <li>Coquetel de cupuaçu</li>
+                        <li>Coquetel de açaí</li>
+                    </ul>
+
+                </article>
+                <article class="menu-card menu-card-wide">
+
+                    <div class="card-icon">
+                        ♡
+                    </div>
+
+                    <h3>
+                        Extras
+                    </h3>
+
+                    <ul>
+                        <li>Água aromatizada</li>
+                        <li>Brigadeiro e churros volantes</li>
+                        <li>Mesa do café</li>
+                        <li>Carrinho de pipoca</li>
+                        <li>Ilha de frutas</li>
+                    </ul>
+
+                </article>
 
         </div>
 
@@ -4934,6 +5697,53 @@ function mostrarAgradecimento() {
 
 }
 
+
+
+function normalizarTexto(texto) {
+    return texto
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9 ]/g, "")
+        .trim();
+}
+
+
+function buscarMesa(valor) {
+
+    const termo = normalizarTexto(valor);
+    const cartoes = document.querySelectorAll(".table-card");
+    const resultado = document.getElementById("tableSearchResult");
+    const mesasEncontradas = [];
+
+    cartoes.forEach(function(cartao) {
+
+        let achou = false;
+
+        cartao.querySelectorAll("li").forEach(function(item) {
+            const bate = termo.length >= 2 &&
+                normalizarTexto(item.textContent).includes(termo);
+            item.classList.toggle("is-match", bate);
+            if (bate) achou = true;
+        });
+
+        cartao.classList.toggle("is-hit", achou);
+        cartao.classList.toggle("is-dim", termo.length >= 2 && !achou);
+
+        if (achou) {
+            mesasEncontradas.push(cartao.querySelector("h3").textContent.trim());
+        }
+
+    });
+
+    if (termo.length < 2) {
+        resultado.textContent = "";
+    } else if (mesasEncontradas.length === 0) {
+        resultado.textContent = "Nenhum nome encontrado. Confira a grafia.";
+    } else {
+        resultado.textContent = "Encontrado em: " + mesasEncontradas.join(", ");
+    }
+}
 
 </script>
 
