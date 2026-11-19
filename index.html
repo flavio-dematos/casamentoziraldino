@@ -67,6 +67,28 @@
 
 
         /* =====================================================
+           JOGO DO CASAL
+        ===================================================== */
+
+        .game-promo { padding: 56px 20px 8px; }
+        .game-card {
+            display: block; max-width: 980px; margin: 0 auto; text-decoration: none; color: var(--cream);
+            border: 1px solid var(--border); border-radius: 22px; overflow: hidden; background: var(--navy-light);
+            box-shadow: var(--shadow); transition: transform .25s ease, box-shadow .25s ease;
+        }
+        .game-card:hover { transform: translateY(-4px) rotate(-.3deg); box-shadow: 0 30px 90px rgba(216,173,85,.25); }
+        .game-card img { display: block; width: 100%; height: auto; }
+        .game-card .game-info { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 18px 24px; }
+        .game-card .game-info p { margin: 0; font-size: 1.05rem; line-height: 1.5; }
+        .game-card .game-info small { display: block; opacity: .75; font-size: .9rem; }
+        .game-card .game-play {
+            flex: none; padding: 12px 22px; border-radius: 999px; background: var(--gold); color: var(--navy);
+            font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .85rem; animation: gamePulse 1.6s ease-in-out infinite;
+        }
+        @keyframes gamePulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(216,173,85,.55); } 50% { box-shadow: 0 0 0 10px rgba(216,173,85,0); } }
+        @media (max-width: 600px) { .game-card .game-info { padding: 14px 16px; } .game-card .game-play { width: 100%; text-align: center; } }
+
+        /* =====================================================
            RESET
         ===================================================== */
 
@@ -3145,7 +3167,7 @@
             </a>
 
 
-            <a href="ziru-e-zira/">
+            <a href="#jogo">
 
                 <span>♥</span>
 
@@ -3177,6 +3199,24 @@
 
 
 <main>
+
+
+<!-- =========================================================
+     JOGO DO CASAL
+========================================================= -->
+
+<section class="game-promo" id="jogo" aria-label="Jogo do casal">
+    <a class="game-card" href="ziru-e-zira/">
+        <img src="ziru-e-zira/capa.jpg" alt="Capa do jogo Ziru &amp; Zira contra o Monstro do Desamor" width="1400" height="788" loading="lazy">
+        <div class="game-info">
+            <p>
+                Antes da festa, ajude a gente a derrotar o Monstro do Desamor!
+                <small>Um jogo de luta em pixel art de Brasília a Lisboa. Funciona no celular.</small>
+            </p>
+            <span class="game-play">▶ Jogar agora</span>
+        </div>
+    </a>
+</section>
 
 
 <!-- =========================================================
