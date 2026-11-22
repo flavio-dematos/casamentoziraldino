@@ -3111,6 +3111,106 @@
 
         }
 
+        .gift-final-qr {
+
+            display: block;
+
+            width: min(240px, 80%);
+
+            height: auto;
+
+            margin: 26px auto 22px;
+
+            border-radius: 16px;
+
+        }
+
+
+        .gift-final .pix-code-label {
+
+            display: block;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .gift-final .pix-code-container {
+
+            max-width: 520px;
+
+            margin: 0 auto;
+
+        }
+
+
+        .gift-final .pix-code-container {
+
+            display: flex;
+
+            gap: 8px;
+
+        }
+
+
+        .gift-final .pix-code-container input {
+
+            flex: 1;
+
+            min-width: 0;
+
+            padding: 13px 14px;
+
+            border: 1px solid rgba(216, 173, 85, 0.40);
+
+            border-radius: 8px;
+
+            background: rgba(21, 23, 46, 0.65);
+
+            color: var(--cream);
+
+            font-size: 0.8rem;
+
+        }
+
+
+        .gift-final .pix-code-container button {
+
+            padding: 13px 22px;
+
+            border: 1px solid var(--gold);
+
+            border-radius: 8px;
+
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+
+            color: #16172b;
+
+            font-family: "Josefin Sans", sans-serif;
+
+            font-size: 0.78rem;
+
+            font-weight: 600;
+
+            letter-spacing: 0.14em;
+
+            text-transform: uppercase;
+
+            cursor: pointer;
+
+        }
+
+
+        @media (max-width: 720px) {
+
+            .gift-final .pix-code-container {
+
+                flex-direction: column;
+
+            }
+
+        }
+
     </style>
 
 </head>
@@ -3199,7 +3299,7 @@
 
             <a href="#presentes">
                 <span>✧</span>
-                Lista de presentes
+                Presentes
             </a>
 
         </nav>
@@ -3314,1211 +3414,68 @@
 
 
 <!-- =========================================================
-     COTAS
+     PRESENTES (pós-casamento)
 ========================================================= -->
 
 <section
-    class="section"
+    class="rsvp-section thanks-section"
     id="presentes"
 >
 
-
     <div class="page">
 
-
-        <div class="section-heading">
-
+        <div class="rsvp-box gift-final">
 
             <span class="eyebrow">
-
-                Cotas de Casamento
-
+                Presentes
             </span>
 
-
             <h2>
-
-                Nossa Lua de Mel
-
+                Obrigado pelos presentes!
             </h2>
 
+            <p>
+                Muito obrigado por todos os presentes e por todo o carinho.
+                Se alguém esqueceu e ainda quer contribuir,
+                é só usar o QR Code ou o Pix copia e cola abaixo
+                e <strong>escolher o valor</strong>.
+            </p>
 
-            <div class="ornament">
+            <img
+                class="gift-final-qr"
+                src="sem_valor.jpg"
+                alt="QR Code Pix com valor livre"
+                width="320"
+                height="320"
+                loading="lazy"
+            >
 
-                <span>✦</span>
+            <span class="pix-code-label">
+                Pix copia e cola · valor livre
+            </span>
+
+            <div class="pix-code-container">
+
+                <input
+                    type="text"
+                    id="pixLivre"
+                    value="00020126580014BR.GOV.BCB.PIX01369eec9c2f-3113-4bac-925d-c930d8d614f55204000053039865802BR5924Flavio dos Santos Barros6009SAO PAULO62140510mOMA9er8sP6304ED86"
+                    readonly
+                    aria-label="Código Pix copia e cola"
+                >
+
+                <button
+                    type="button"
+                    onclick="copiarPixLivre(this)"
+                >
+                    Copiar
+                </button>
 
             </div>
 
-
-            <p class="section-description">
-
-                A presença de vocês
-                é o nosso maior presente.
-
-
-                Mas, caso queiram contribuir
-                com algumas das prioridades
-                financeiras extremamente sérias
-                do nosso casamento,
-                escolham uma cota abaixo
-
-                <a
-                    href="#"
-                    class="choose-value-link"
-                    onclick="abrirPix('sem_valor'); return false;"
-                >ou clique aqui para escolher um valor</a>.
-
-            </p>
-
-
         </div>
-
-
-
-        <div class="gift-notice">
-
-            <strong>
-                As cotas são só uma brincadeira!
-            </strong>
-
-            Os nomes e as histórias são de mentirinha:
-            no fim, toda cota é simplesmente
-
-            <strong>
-                um Pix para os noivos no valor indicado,
-            </strong>
-
-            já configurado em cada uma.
-
-
-            <br><br>
-
-
-            Prefere escolher quanto dar?
-            Na última opção,
-
-            <strong>
-                "Compre um Lote no Nosso Coração",
-            </strong>
-
-            você define o valor que quiser.
-
-        </div>
-
-
-
-        <div class="gifts-grid">
-
-
-            <!-- 20 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">🎮</div>
-
-                        <div class="fallback-text">
-                            Auxílio Skin do Fortnite
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="skin-fortnite.jpg"
-                        alt="Auxílio Skin do Fortnite"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Auxílio Skin do Fortnite
-                    </h3>
-
-                    <p>
-
-                        Porque a gente precisa estar
-                        com o visual em dia
-                        não só no casamento,
-                        mas também no lobby do jogo.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 20,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('20')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 30 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">🤡</div>
-
-                        <div class="fallback-text">
-                            Nariz de Palhaço
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="nariz-palhaco.jpg"
-                        alt="Nariz de Palhaço para a Marina"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Nariz de Palhaço para a Marina
-                    </h3>
-
-                    <p>
-
-                        Um item de primeira necessidade
-                        para garantir os sorrisos
-                        durante a viagem
-                        e na volta para casa.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 30,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('30')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 40 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">🎓</div>
-
-                        <div class="fallback-text">
-                            O Eterno Calouro
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="eterno-calouro.jpg"
-                        alt="O Eterno Calouro"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Cota "O Eterno Calouro"
-                    </h3>
-
-                    <p>
-
-                        Línguas, Design,
-                        Direito, Computação...
-
-
-                        Ajude a financiar
-                        um café forte para quem
-                        já pediu música no Fantástico
-                        das matrículas universitárias.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 40,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('40')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 50 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">🛋️</div>
-
-                        <div class="fallback-text">
-                            Terapia Pós-Sala de Aula
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="terapia-professora.jpg"
-                        alt="Terapia Pós-Sala de Aula"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Cota "Terapia Pós-Sala de Aula"
-                    </h3>
-
-                    <p>
-
-                        Dar aula deixa marcas.
-
-
-                        Ajude a Marina a pagar
-                        o psicólogo depois do trauma
-                        de corrigir prova,
-                        lidar com turma barulhenta
-                        e ouvir "professora,
-                        vale ponto?" pela milésima vez.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 50,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('50')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 60 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">🎨</div>
-
-                        <div class="fallback-text">
-                            Curso Aleatório da Semana
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="curso-aleatorio.jpg"
-                        alt="Curso Aleatório da Semana"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Cota "Curso Aleatório da Semana"
-                    </h3>
-
-                    <p>
-
-                        Hoje é tecido,
-                        amanhã é lira,
-                        depois cerâmica
-                        e na semana seguinte
-                        ninguém mais sabe.
-
-
-                        Ajude a pagar seja lá
-                        o que a Marina inventou
-                        de aprender desta vez.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 60,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('60')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 75 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">⚖️</div>
-
-                        <div class="fallback-text">
-                            Honorários por Pena
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="honorarios-pena.jpg"
-                        alt="Honorários por Pena"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Honorários por Pena
-                    </h3>
-
-                    <p>
-
-                        O mercado está difícil.
-
-
-                        Vamos dar uma força
-                        para esse guerreiro advogado
-                        e contribuir com honorários
-                        por pura pena,
-                        solidariedade e respeito à classe.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 75,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('75')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 85 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">📍</div>
-
-                        <div class="fallback-text">
-                            Marina Se Perdeu
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="marina-se-perdeu.jpg"
-                        alt="Marina Se Perdeu"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Cota "Marina Se Perdeu"
-                    </h3>
-
-                    <p>
-
-                        A Marina saiu de casa confiante
-                        e agora ninguém sabe
-                        onde ela está.
-
-
-                        Ajude-a a pagar
-                        um Uber para casa
-                        antes que atravesse outro estado
-                        sem perceber.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 85,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('85')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 90 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">🎬</div>
-
-                        <div class="fallback-text">
-                            Casting Suspeito
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="casting-falso.jpg"
-                        alt="Casting Suspeito"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Cota "Casting Suspeito"
-                    </h3>
-
-                    <p>
-
-                        Marina caiu em um casting falso
-                        depois de ouvir
-                        "é uma grande oportunidade".
-
-
-                        Ajude-a a pagar o prejuízo
-                        dessa promissora
-                        decisão artística.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 90,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('90')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 100 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">📱</div>
-
-                        <div class="fallback-text">
-                            Publi da Viagem
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="publi-viagem.jpg"
-                        alt="Publi da Viagem"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Patrocínio "Publi da Viagem"
-                    </h3>
-
-                    <p>
-
-                        Como boa social media e atriz,
-                        a Marina precisa de fundos
-                        para garantir as melhores locações,
-                        roteiros dramáticos
-                        e muito engajamento
-                        nos stories da lua de mel.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 100,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('100')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 150 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">🚐</div>
-
-                        <div class="fallback-text">
-                            Transporte Premium
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="van-confiavel.jpg"
-                        alt="Transporte Premium"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Cota "Transporte Premium"
-                    </h3>
-
-                    <p>
-
-                        Ajude-os a pagar
-                        o transporte naquela van
-                        bastante confiável,
-                        revisada em algum momento
-                        da história e com grandes chances
-                        de chegar ao destino.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 150,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('150')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 200 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">🏋️</div>
-
-                        <div class="fallback-text">
-                            Conserva-Shape
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="conserva-shape.jpg"
-                        alt="Cota Conserva-Shape"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Cota "Conserva-Shape"
-                    </h3>
-
-                    <p>
-
-                        Muita gente relaxa
-                        depois do casamento.
-
-
-                        Não deixe que isso
-                        aconteça conosco!
-
-
-                        Colabore para o pagamento
-                        da academia,
-                        manutenção do shape
-                        e para que a aliança
-                        seja a única coisa apertando.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 200,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('200')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 250 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">🎭</div>
-
-                        <div class="fallback-text">
-                            Bolsa-Fantasia
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="bolsa-fantasia.jpg"
-                        alt="Bolsa-Fantasia"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Cota "Bolsa-Fantasia"
-                    </h3>
-
-                    <p>
-
-                        Somos icônicos,
-                        fazemos festas temáticas
-                        e levamos fantasia muito a sério.
-
-
-                        O problema é que sustentar
-                        esse estilo de vida custa caro.
-
-
-                        Ajude-nos a manter
-                        nosso jeito icônico
-                        e os figurinos cada vez
-                        mais elaborados.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 250,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('250')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 500 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">🐐</div>
-
-                        <div class="fallback-text">
-                            Yoga com Cabras
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="yoga-cabras.jpg"
-                        alt="Yoga com Cabras"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Cota "Yoga com Cabras"
-                    </h3>
-
-                    <p>
-
-                        Marina descobriu
-                        que existe yoga com cabras
-                        e, desde então,
-                        isso virou um objetivo de vida.
-
-
-                        Ajude-a a realizar
-                        o sonho de encontrar paz interior
-                        enquanto uma cabra
-                        sobe nas costas dela.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 500,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('500')"
-                    >
-                        Presentear
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 1000 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">🏚️</div>
-
-                        <div class="fallback-text">
-                            Nossa Primeira Mansão
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="primeira-mansao.jpg"
-                        alt="Nossa Primeira Mansão"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Cota "Nossa Primeira Mansão"
-                    </h3>
-
-                    <p>
-
-                        Ajude-nos na compra
-                        da nossa primeira mansão.
-
-
-                        No momento,
-                        nosso padrão de luxo
-                        está mais próximo
-                        da casa do Cão Coragem:
-
-
-                        no meio do nada,
-                        assustadora,
-                        caindo aos pedaços
-                        e cheia de personalidade.
-
-
-                        Mas toda grande história
-                        de amor começa
-                        com um imóvel duvidoso.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 1.000,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('1000')"
-                    >
-                        Financiar a mansão
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- 2000 -->
-
-            <article class="gift-card">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">🎥</div>
-
-                        <div class="fallback-text">
-                            Aquisição da Warner
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="comprar-warner.jpg"
-                        alt="Aquisição da Warner"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Cota "Aquisição da Warner"
-                    </h3>
-
-                    <p>
-
-                        A Warner está à venda
-                        e, sinceramente,
-                        alguém precisa tomar uma atitude.
-
-
-                        Contribua com nossa oferta
-                        de compra do estúdio.
-
-
-                        Ainda faltam alguns bilhões,
-                        mas toda aquisição hostil
-                        começa com um Pix
-                        e excesso de confiança.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        R$ 2.000,00
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('2000')"
-                    >
-                        Financiar a aquisição
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- VALOR LIVRE -->
-
-            <article class="gift-card full-width">
-
-                <div class="gift-image-wrapper">
-
-                    <div class="fallback">
-
-                        <div class="fallback-icon">♡</div>
-
-                        <div class="fallback-text">
-                            Compre um Lote no Nosso Coração
-                        </div>
-
-                    </div>
-
-                    <img
-                        src="lote-coracao.jpg"
-                        alt="Compre um Lote no Nosso Coração"
-                        class="gift-img"
-                        onerror="this.style.display='none'"
-                    >
-
-                </div>
-
-
-                <div class="gift-info">
-
-                    <h3>
-                        Compre um Lote no Nosso Coração
-                    </h3>
-
-                    <p>
-
-                        Nosso coração ainda tem terrenos
-                        disponíveis para todos os públicos.
-
-
-                        A metragem varia pela contribuição:
-                        pode ser desde um cantinho aconchegante
-                        até uma verdadeira fazenda emocional.
-
-
-                        Escolha quanto quer investir
-                        e garanta seu espaço vitalício
-                        no coração dos noivos.
-
-
-                        <br><br>
-
-
-                        Escritura simbólica,
-                        IPTU emocional incluso
-                        e valorização garantida
-                        pela amizade.
-
-                    </p>
-
-                    <span class="gift-price-label">
-                        Valor da cota
-                    </span>
-
-                    <span class="gift-price">
-                        Você escolhe ♡
-                    </span>
-
-                    <button
-                        type="button"
-                        class="pix-button"
-                        onclick="abrirPix('sem_valor')"
-                    >
-                        Comprar meu lote
-                    </button>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
 
     </div>
-
 
 </section>
 
@@ -5477,6 +4434,20 @@ document.addEventListener("keydown", function(event) {
 
 
 
+
+
+async function copiarPixLivre(botao) {
+    const campo = document.getElementById("pixLivre");
+    try {
+        await navigator.clipboard.writeText(campo.value);
+    } catch (erro) {
+        campo.select();
+        document.execCommand("copy");
+    }
+    const original = botao.textContent;
+    botao.textContent = "Copiado!";
+    setTimeout(function() { botao.textContent = original; }, 2000);
+}
 
 </script>
 
