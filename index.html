@@ -15,7 +15,7 @@
         content="#15172e"
     >
 
-    <title>Flávio & Marina | Casamento</title>
+    <title>Flávio & Marina | Obrigado!</title>
 
     <!-- GOOGLE FONTS -->
 
@@ -2993,6 +2993,124 @@
         }
 
 
+        /* =====================================================
+           AGRADECIMENTO (pós-casamento)
+        ===================================================== */
+
+        .thanks-section {
+
+            padding-top: 40px;
+
+        }
+
+
+        .thanks-section .rsvp-box p + p {
+
+            margin-top: 14px;
+
+        }
+
+
+        .thanks-section .rsvp-button {
+
+            margin-top: 26px;
+
+        }
+
+
+        .thanks-signature {
+
+            margin-top: 22px !important;
+
+            margin-bottom: 0;
+
+            font-style: italic;
+
+            font-size: 1.35rem !important;
+
+            color: var(--gold-light) !important;
+
+        }
+
+        .insta-tags {
+
+            margin-top: 28px;
+
+        }
+
+
+        .insta-label {
+
+            display: block;
+
+            margin-bottom: 12px;
+
+            font-family: "Josefin Sans", sans-serif;
+
+            font-size: 0.72rem;
+
+            letter-spacing: 0.2em;
+
+            text-transform: uppercase;
+
+            color: var(--gold);
+
+        }
+
+
+        .insta-links {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+        }
+
+
+        .insta-links a {
+
+            padding: 10px 18px;
+
+            border: 1px solid rgba(216, 173, 85, 0.45);
+
+            border-radius: 999px;
+
+            color: var(--gold-light);
+
+            text-decoration: none;
+
+            font-family: "Josefin Sans", sans-serif;
+
+            font-size: 0.85rem;
+
+            letter-spacing: 0.06em;
+
+            transition: 0.2s ease;
+
+        }
+
+
+        .insta-links a:hover {
+
+            border-color: var(--gold);
+
+            color: var(--white-soft);
+
+            background: rgba(216, 173, 85, 0.12);
+
+        }
+
+
+        #agradecimento {
+
+            scroll-margin-top: 30px;
+
+        }
+
     </style>
 
 </head>
@@ -3046,80 +3164,10 @@
 
         <p class="hero-text">
 
-            Mal podemos esperar
-            para celebrar com vocês!
+            Obrigado por celebrarem
+            esse dia com a gente!
 
         </p>
-
-
-
-        <!-- LOCAL -->
-
-        <div
-            class="hero-details"
-            id="local"
-        >
-
-
-            <span class="arrival-badge">
-                <span>Chegada até <strong>16:30</strong></span>
-                <span class="arrival-sep" aria-hidden="true">·</span>
-                <span>Cerimônia às <strong>17:00</strong></span>
-            </span>
-
-
-            <br>
-
-
-            <a
-                class="location-link"
-
-                href="https://www.google.com/maps/search/?api=1&query=Villa+Tresor+Gleba+12%2F14+Lote+01+Ponte+Alta+Norte+Gama+Brasilia+DF+72427-010"
-
-                target="_blank"
-
-                rel="noopener noreferrer"
-            >
-
-                <span aria-hidden="true">
-                    ⌖
-                </span>
-
-
-                Villa Trésor · Brasília
-
-            </a>
-
-
-            <a
-                class="map-preview"
-
-                href="https://www.google.com/maps/search/?api=1&query=Villa+Tresor+Gleba+12%2F14+Lote+01+Ponte+Alta+Norte+Gama+Brasilia+DF+72427-010"
-
-                target="_blank"
-
-                rel="noopener noreferrer"
-
-                aria-label="Abrir a localização da Villa Trésor no Google Maps"
-            >
-
-                <img
-                    src="mapa-villa-tresor.png"
-                    alt="Mapa com a localização da Villa Trésor"
-                    loading="lazy"
-                >
-
-            </a>
-
-
-            <span class="map-hint">
-
-                Toque para abrir no Google Maps
-
-            </span>
-
-
-        </div>
 
 
 
@@ -3130,64 +3178,29 @@
             aria-label="Navegação rápida"
         >
 
-
-            <a href="#manual">
-
-                <span>✦</span>
-
-                Manual
-
-            </a>
-
-
-            <a href="#mesas">
-
-                <span>◈</span>
-
-                Mesas
-
-            </a>
-
-
-            <a href="#cardapio">
-
-                <span>✧</span>
-
-                Cardápio
-
-            </a>
-
-
-            <a href="#presentes">
-
+            <a href="#agradecimento">
                 <span>♡</span>
-
-                Lista de presentes
-
+                Recado dos noivos
             </a>
-
-
-            <a href="#jogo">
-
-                <span>♥</span>
-
-                Jogo do casal
-
-            </a>
-
 
             <a
-                href="https://www.google.com/maps/search/?api=1&query=Villa+Tresor+Gleba+12%2F14+Lote+01+Ponte+Alta+Norte+Gama+Brasilia+DF+72427-010"
+                href="https://drive.google.com/drive/folders/14MaW5_TnA8azOL0bQVI8UjbyPHprCNlt"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-
-                <span>⌖</span>
-
-                Local
-
+                <span>✦</span>
+                Enviar fotos
             </a>
 
+            <a href="#jogo">
+                <span>♥</span>
+                Jogo do casal
+            </a>
+
+            <a href="#presentes">
+                <span>✧</span>
+                Lista de presentes
+            </a>
 
         </nav>
 
@@ -3202,6 +3215,86 @@
 
 
 <!-- =========================================================
+     AGRADECIMENTO
+========================================================= -->
+
+<section
+    class="rsvp-section thanks-section"
+    id="agradecimento"
+>
+
+    <div class="page">
+
+        <div class="rsvp-box">
+
+            <span class="eyebrow">
+                21 · 11 · 2026
+            </span>
+
+            <h2>
+                Muito obrigado!
+            </h2>
+
+            <p>
+                Queridos, ontem foi ótimo, e isso também é graças
+                a vocês, que embarcaram em tudo o que a gente propôs.
+                <strong>Muitíssimo obrigado por fazerem parte
+                desse momento tão especial!</strong>
+            </p>
+
+            <p>
+                Quanto às fotos: compartilhem pelo nosso Drive,
+                para a gente poder ver a perspectiva de cada um
+                e ter um registro de tudo o que presenciamos
+                (e do que não vimos também!).
+            </p>
+
+            <a
+                class="rsvp-button"
+                href="https://drive.google.com/drive/folders/14MaW5_TnA8azOL0bQVI8UjbyPHprCNlt"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                ✦ Enviar e ver as fotos no Drive
+            </a>
+
+            <div class="insta-tags">
+
+                <span class="insta-label">
+                    Postou alguma foto? Marque a gente!
+                </span>
+
+                <div class="insta-links">
+
+                    <a
+                        href="https://www.instagram.com/flaviosbm/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >@flaviosbm</a>
+
+                    <a
+                        href="https://www.instagram.com/marinnafreitas/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >@marinnafreitas</a>
+
+                </div>
+
+            </div>
+
+            <p class="thanks-signature">
+                Com carinho, Flávio &amp; Marina
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
      JOGO DO CASAL
 ========================================================= -->
 
@@ -3210,344 +3303,14 @@
         <img src="ziru-e-zira/capa.jpg" alt="Capa do jogo Ziru &amp; Zira contra o Monstro do Desamor" width="1400" height="788" loading="lazy">
         <div class="game-info">
             <p>
-                Antes da festa, ajude a gente a derrotar o Monstro do Desamor!
-                <small>Um jogo de luta em pixel art de Brasília a Lisboa. Funciona no celular.</small>
+                O casamento aconteceu, mas, se quiser reviver,
+                o nosso jogo continua on!
+                <small>Ajude Ziru &amp; Zira a derrotar o Monstro do Desamor, de Brasília a Lisboa. Funciona no celular.</small>
             </p>
             <span class="game-play">▶ Jogar agora</span>
         </div>
     </a>
 </section>
-
-
-<!-- =========================================================
-     MANUAL DO CONVIDADO
-========================================================= -->
-
-<section
-    class="section"
-    id="manual"
->
-
-    <div class="page">
-
-
-        <div class="section-heading">
-
-
-            <span class="eyebrow">
-
-                Dicas para o grande dia
-
-            </span>
-
-
-            <h2>
-
-                Manual do Convidado
-
-            </h2>
-
-
-            <p class="section-description">
-
-                Preparamos algumas orientações
-                com carinho para que tudo saia
-                perfeitamente em nossa celebração.
-
-            </p>
-
-
-        </div>
-
-
-
-        <!-- DESTAQUE: HORÁRIO DE CHEGADA -->
-
-        <div class="arrival-highlight">
-
-            <span class="arrival-highlight-label">
-                Atenção ao horário
-            </span>
-
-            <p class="arrival-highlight-time">
-                Chegue até as <strong>16:30</strong>
-            </p>
-
-            <p>
-                A cerimônia começa pontualmente às
-                <strong>17:00</strong>.
-                Pedimos que todos cheguem
-                <strong>no máximo até as 16:30</strong>
-                para que haja tempo de se acomodar
-                e de tudo começar no horário.
-            </p>
-
-        </div>
-
-
-
-        <div class="cards">
-
-
-            <!-- HORÁRIOS -->
-
-            <article class="card">
-
-
-                <div class="card-icon">
-                    ◷
-                </div>
-
-
-                <h3>
-                    Horários
-                </h3>
-
-
-                <p>
-
-                    A cerimônia começa
-                    pontualmente às
-
-                    <strong>
-                        17:00.
-                    </strong>
-
-
-                    Os convidados devem chegar
-
-                    <strong>
-                        no máximo até as 16:30,
-                    </strong>
-
-                    para que todos possam
-                    se organizar com calma
-                    antes do início.
-
-
-                    A festa será encerrada
-                    pontualmente às
-
-                    <strong>
-                        23:00.
-                    </strong>
-
-                </p>
-
-
-            </article>
-
-
-
-            <!-- CONVITE -->
-
-            <article class="card">
-
-
-                <div class="card-icon">
-                    ✦
-                </div>
-
-
-                <h3>
-                    O Convite
-                </h3>
-
-
-                <p>
-
-                    O convite é individual
-                    e intransferível.
-
-
-                    Por questões de capacidade
-                    do local, não é possível
-                    adicionar acompanhantes extras.
-
-
-                    <strong>
-                        Lembre-se:
-                        convidado não convida.
-                    </strong>
-
-                </p>
-
-
-            </article>
-
-
-
-            <!-- CERIMÔNIA -->
-
-            <article class="card">
-
-
-                <div class="card-icon">
-                    ♡
-                </div>
-
-
-                <h3>
-                    Cerimônia Unplugged
-                </h3>
-
-
-                <p>
-
-                    Durante a cerimônia,
-                    pedimos que guardem
-                    os celulares.
-
-
-                    Deixem os registros
-                    por conta dos nossos fotógrafos
-                    e aproveitem esse momento
-                    conectados conosco.
-
-                </p>
-
-
-            </article>
-
-
-
-            <!-- TRAJE -->
-
-            <article class="card">
-
-
-                <div class="card-icon">
-                    ✧
-                </div>
-
-
-                <h3>
-                    O Traje
-                </h3>
-
-
-                <p>
-
-                    O traje é
-
-                    <strong>
-                        esporte fino ou social.
-                    </strong>
-
-
-                    Pedimos, em especial às convidadas,
-                    que
-
-                    <strong>
-                        evitem cores claras,
-                    </strong>
-
-                    pois o branco, o marfim, o off-white
-                    e tons próximos são de uso exclusivo
-                    da noiva Zira.
-
-
-                    Capriche no look
-                    e deixe os tons claros com ela!
-
-                </p>
-
-
-            </article>
-
-
-
-            <!-- POLÍTICA -->
-
-            <article class="card">
-
-
-                <div class="card-icon">
-                    ☀
-                </div>
-
-
-                <h3>
-                    Política da Alegria
-                </h3>
-
-
-                <p>
-
-                    Nosso maior desejo
-                    é que todos se divirtam muito.
-
-
-                    Por isso,
-
-                    <strong>
-                        reclamações não estão
-                        na lista de convidados.
-                    </strong>
-
-
-                    Se algo não for exatamente
-                    do seu agrado,
-                    faça a egípcia,
-                    guarde para si
-                    e foque no que realmente importa:
-
-                    <strong>
-                        celebrar esse momento
-                        com a gente!
-                    </strong>
-
-                </p>
-
-
-            </article>
-
-
-
-            <!-- MESAS -->
-
-            <article class="card">
-
-
-                <div class="card-icon">
-                    ◈
-                </div>
-
-
-                <h3>
-                    Mesas no Salão
-                </h3>
-
-
-                <p>
-
-                    Fizemos uma designação de mesas no salão
-                    apenas por formalidade.
-
-                    <strong>
-                        Ao chegarem, fiquem à vontade
-                        para mudar de mesa
-                    </strong>
-
-                    e sentar perto de quem quiserem.
-
-                    <a href="#mesas" class="choose-value-link">
-                        Ver as mesas
-                    </a>
-
-                </p>
-
-
-            </article>
-
-
-        </div>
-
-
-    </div>
-
-</section>
-
 
 
 <!-- =========================================================
@@ -4764,521 +4527,6 @@
 
 
 <!-- =========================================================
-     PAINEL LATERAL (MESAS E CARDÁPIO)
-========================================================= -->
-
-<div
-    id="sideBackdrop"
-    class="side-backdrop"
-    onclick="fecharPainel()"
-></div>
-
-
-<aside
-    id="sidePanel"
-    class="side-panel"
-    aria-hidden="true"
-    aria-label="Mesas e cardápio"
->
-
-    <div class="side-panel-bar">
-
-        <div class="side-tabs" role="tablist">
-
-            <button
-                type="button"
-                class="side-tab"
-                data-view="mesas"
-                onclick="abrirPainel('mesas')"
-            >
-                ◈ Mesas
-            </button>
-
-            <button
-                type="button"
-                class="side-tab"
-                data-view="cardapio"
-                onclick="abrirPainel('cardapio')"
-            >
-                ✧ Cardápio
-            </button>
-
-        </div>
-
-        <button
-            type="button"
-            class="side-close"
-            onclick="fecharPainel()"
-            aria-label="Fechar"
-        >
-            &times;
-        </button>
-
-    </div>
-
-
-    <div class="side-panel-body">
-
-<!-- =========================================================
-     MESAS
-========================================================= -->
-
-<section
-    class="side-view"
-    id="mesas"
->
-
-    <div class="page">
-
-
-        <div class="section-heading">
-
-            <span class="eyebrow">
-                Onde sentar
-            </span>
-
-            <h2>
-                Mesas no Salão
-            </h2>
-
-            <div class="ornament">
-                <span>✦</span>
-            </div>
-
-        </div>
-
-
-        <div class="tables-notice">
-
-            <strong>
-                A designação de mesas é puro formalismo.
-            </strong>
-
-            Organizamos esta lista só para facilitar,
-            mas, ao chegarem,
-
-            <strong>
-                todos têm total liberdade para mudar de mesa
-            </strong>
-
-            e sentar perto de quem quiserem.
-
-        </div>
-
-
-        <div class="table-search">
-
-            <label for="tableSearch">
-                Procure seu nome
-            </label>
-
-            <input
-                type="search"
-                id="tableSearch"
-                placeholder="Digite seu nome…"
-                autocomplete="off"
-                oninput="buscarMesa(this.value)"
-            >
-
-            <p
-                id="tableSearchResult"
-                class="table-search-result"
-                aria-live="polite"
-            ></p>
-
-        </div>
-
-
-        <div class="tables-grid">
-
-                <article class="table-card table-card-family">
-
-                    <h3>Mesa Retangular A</h3>
-
-                    <ul>
-                        <li>Maria de Fátima da Cruz Daniel</li>
-                        <li>Guilherme Duarte de Freitas</li>
-                        <li>Daniel Cruz de Freitas</li>
-                        <li>Virginia Borges Daniel</li>
-                        <li>Tatiana Daniel</li>
-                        <li>Vitor Daniel</li>
-                        <li>Helena Daniel</li>
-                        <li>Ravi Daniel</li>
-                    </ul>
-
-                </article>
-                <article class="table-card table-card-family">
-
-                    <h3>Mesa Retangular B</h3>
-
-                    <ul>
-                        <li>Cristiano Barros de Matos</li>
-                        <li>Clarice dos Santos Inácio</li>
-                        <li>Thaise Tscha</li>
-                        <li>Antonny Tscha</li>
-                        <li>Isabela</li>
-                        <li>Edvaldo Inacio dos Santos</li>
-                        <li>Leire Neiva Costa dos Santos</li>
-                        <li>Hildebrando Cerqueira Medeiros</li>
-                        <li>Cleudia Inácio dos Santos Medeiros</li>
-                    </ul>
-
-                </article>
-                <article class="table-card">
-
-                    <h3>Mesa 1</h3>
-
-                    <ul>
-                        <li>Chris Keül</li>
-                        <li>Adriano Duarte de Freitas</li>
-                        <li>Edna Russo</li>
-                        <li>Victor Keul</li>
-                        <li>Bruno Keül Duarte de Freitas</li>
-                        <li>Camila Masão Athayde</li>
-                        <li>Bruno Sérgio do Amaral</li>
-                        <li>Lara Lemos de Souza</li>
-                    </ul>
-
-                </article>
-                <article class="table-card">
-
-                    <h3>Mesa 2</h3>
-
-                    <ul>
-                        <li>Victoria Cavalcante</li>
-                        <li>Ana Beatryz Rocha</li>
-                        <li>Vitória Antony Gomes de Matos da Costa e Silva</li>
-                        <li>Luis Humberto Monteiro Beltrão Lima</li>
-                        <li>Lara Silvares</li>
-                        <li>Bruna Oliveira de Castro Lima</li>
-                        <li>Luana de Moura Costa</li>
-                        <li>Larissa Maria Gonçalves Rocha</li>
-                        <li>Ketlen Fernanda dos Santos Melo</li>
-                        <li>Gabriela Martins Santos</li>
-                    </ul>
-
-                </article>
-                <article class="table-card">
-
-                    <h3>Mesa 3</h3>
-
-                    <ul>
-                        <li>Lídia Camarão Paiva</li>
-                        <li>Matheus dos Reis Lima</li>
-                        <li>Lucas Trichez Brandão</li>
-                        <li>Manuela Gonzaga Morais Nogueira</li>
-                        <li>Gleyce Santos Lima</li>
-                        <li>Kathlen Amado</li>
-                        <li>Caroline Gonçalves Padilha Sette</li>
-                        <li>Fernando Fernandes Valle</li>
-                        <li>Robertha Alves de Souza Pierote</li>
-                    </ul>
-
-                </article>
-                <article class="table-card">
-
-                    <h3>Mesa 4</h3>
-
-                    <ul>
-                        <li>Érica Sant&#x27;Anna de Matos</li>
-                        <li>Mariza Santanna Moncayo</li>
-                        <li>Victor SantAnna de Matos</li>
-                        <li>Alencar Moncayo Lima</li>
-                        <li>Regina Barros Chacur Politano</li>
-                        <li>Sônia Maria Barros</li>
-                        <li>Maria de Fatima Barros Pimenta</li>
-                        <li>Kleber Silveira Pimenta</li>
-                    </ul>
-
-                </article>
-                <article class="table-card">
-
-                    <h3>Mesa 5</h3>
-
-                    <ul>
-                        <li>Rosana Blanke Piva</li>
-                        <li>James Theodoro da Silva</li>
-                        <li>Arthur Piva Lima</li>
-                        <li>Soraia Andrade de Lima Formiga</li>
-                        <li>Fábio de Oliveira Nobre Formiga</li>
-                        <li>Mônica</li>
-                        <li>Charles</li>
-                        <li>Vania Betat</li>
-                        <li>Silvio Betat</li>
-                    </ul>
-
-                </article>
-                <article class="table-card">
-
-                    <h3>Mesa 6</h3>
-
-                    <ul>
-                        <li>Lene Regina de O. Pontes Netto</li>
-                        <li>Ricardo Franco Pontes Netto</li>
-                        <li>Mariana de Oliveira Pontes Netto</li>
-                        <li>Gabriel de Oliveira Pontes Netto</li>
-                        <li>Fábio Antonio de Faria</li>
-                        <li>Solange Cabral Bombonato</li>
-                        <li>Ivone de Andrade Vieira</li>
-                        <li>Cássia Ribeiro</li>
-                        <li>Fernando Duarte de Freitas</li>
-                        <li>Sérgio Daniel</li>
-                    </ul>
-
-                </article>
-                <article class="table-card">
-
-                    <h3>Mesa 7</h3>
-
-                    <ul>
-                        <li>Júlia Barreto Cavalcante do Amaral</li>
-                        <li>Gabriel França Ferreira</li>
-                        <li>Milene Vieira</li>
-                        <li>Vitória Luiza Alves Calmon</li>
-                        <li>Vinicius Silva Sampaio</li>
-                        <li>Ana Luiza Chaves</li>
-                        <li>Leonam Jônatas Soares Oliveira</li>
-                        <li>Gabriela Macêdo Borges</li>
-                    </ul>
-
-                </article>
-                <article class="table-card">
-
-                    <h3>Mesa 8</h3>
-
-                    <ul>
-                        <li>Bruno Rabelo Nogueira</li>
-                        <li>Luma Andressa Gonçalves Holanda</li>
-                        <li>Gabriel Costa Santana</li>
-                        <li>Larissa Bonilha Klein</li>
-                        <li>Caio dos Santos Alves</li>
-                        <li>Henrique Luz</li>
-                        <li>Mariana Martins Batista Dias</li>
-                        <li>Vinícius Alves Rodrigues de Matos</li>
-                        <li>Talyssa Novellino</li>
-                        <li>Igor Lino Resina</li>
-                    </ul>
-
-                </article>
-                <article class="table-card">
-
-                    <h3>Mesa 9</h3>
-
-                    <ul>
-                        <li>Filipe Cerqueira dos Santos</li>
-                        <li>Thiago Cerqueira dos Santos</li>
-                        <li>Larisse Oliveira</li>
-                        <li>Klícia Cerqueira dos Santos Alves</li>
-                        <li>Marcus Luís Alves Silva</li>
-                        <li>Pietro Alves dos Santos</li>
-                        <li>Sarah Oliveira Lima</li>
-                        <li>Arão Oliveira Cortez</li>
-                        <li>Luciano</li>
-                    </ul>
-
-                </article>
-                <article class="table-card">
-
-                    <h3>Mesa 10</h3>
-
-                    <ul>
-                        <li>Leire Ane Inacio Santos</li>
-                        <li>Ellen Inacio Santos</li>
-                        <li>Wallyson Lobo</li>
-                        <li>Delson Inácio dos Santos</li>
-                        <li>Fernanda Santos Nogueira</li>
-                        <li>Ramon Rodrigues Gomes</li>
-                        <li>Raquel Inácio dos Santos</li>
-                        <li>Thiele Araujo dos Santos</li>
-                        <li>Leonardo Inacio Santos</li>
-                    </ul>
-
-                </article>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-
-<!-- =========================================================
-     CARDÁPIO
-========================================================= -->
-
-<section
-    class="side-view"
-    id="cardapio"
->
-
-    <div class="page">
-
-
-        <div class="section-heading">
-
-            <span class="eyebrow">
-                Para saborear
-            </span>
-
-            <h2>
-                Cardápio
-            </h2>
-
-            <div class="ornament">
-                <span>✦</span>
-            </div>
-
-            <p class="section-description">
-                Preparamos um menu especial
-                para celebrar com vocês.
-                A festa vai das <strong>18:00</strong>
-                às <strong>23:00</strong>.
-            </p>
-
-        </div>
-
-
-        <div class="menu-grid">
-
-                <article class="menu-card">
-
-                    <div class="card-icon">
-                        ✦
-                    </div>
-
-                    <h3>
-                        Salgados & Folhados
-                    </h3>
-
-                    <ul>
-                        <li>Mix de salgados</li>
-                        <li>Folhado de frango com azeitonas</li>
-                        <li>Folhado de castanha com mel</li>
-                        <li>Folhado de tomate seco com ricota</li>
-                        <li>Folhado de carne seca com aipim</li>
-                    </ul>
-
-                </article>
-                <article class="menu-card">
-
-                    <div class="card-icon">
-                        ✧
-                    </div>
-
-                    <h3>
-                        Entradinhas
-                    </h3>
-
-                    <ul>
-                        <li>Tortilha brasileira</li>
-                        <li>Mini bruschetta de antepasto de berinjela</li>
-                        <li>Manga com salaminho</li>
-                        <li>Croquete de linguiça apimentada</li>
-                        <li>Tartelete de doce de leite</li>
-                        <li>Caldo de cana com pastel de carne</li>
-                    </ul>
-
-                </article>
-                <article class="menu-card">
-
-                    <div class="card-icon">
-                        ◈
-                    </div>
-
-                    <h3>
-                        Empratados
-                    </h3>
-
-                    <ul>
-                        <li>Frango xadrez</li>
-                        <li>Filé mignon ao molho Dijon com arroz</li>
-                        <li>Kani com manga</li>
-                        <li>Mini penne ao gorgonzola com nozes</li>
-                        <li>Bobó de camarão</li>
-                        <li>Risoto de tomate seco com ricota</li>
-                        <li>Musseline de mandioca com shimeji</li>
-                    </ul>
-
-                </article>
-                <article class="menu-card">
-
-                    <div class="card-icon">
-                        ☀
-                    </div>
-
-                    <h3>
-                        Sucos & Coquetéis
-                    </h3>
-
-                    <ul>
-                        <li>Suco de melancia</li>
-                        <li>Suco de maracujá</li>
-                        <li>Coquetel de cupuaçu</li>
-                        <li>Coquetel de açaí</li>
-                    </ul>
-
-                </article>
-                <article class="menu-card">
-
-                    <div class="card-icon">
-                        ❖
-                    </div>
-
-                    <h3>
-                        Bebidas Alcoólicas
-                    </h3>
-
-                    <ul>
-                        <li>Drinks</li>
-                        <li>Cerveja</li>
-                    </ul>
-
-                </article>
-
-                <article class="menu-card menu-card-wide">
-
-                    <div class="card-icon">
-                        ♡
-                    </div>
-
-                    <h3>
-                        Extras
-                    </h3>
-
-                    <ul>
-                        <li>Água aromatizada</li>
-                        <li>Brigadeiro e churros volantes</li>
-                        <li>Mesa do café</li>
-                        <li>Carrinho de pipoca</li>
-                        <li>Ilha de frutas</li>
-                    </ul>
-
-                </article>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-
-    </div>
-
-</aside>
-
-
-
-
-
-
-
-<!-- =========================================================
      RODAPÉ
 ========================================================= -->
 
@@ -6228,9 +5476,7 @@ document.addEventListener("keydown", function(event) {
 });
 
 
-if (VISTAS_PAINEL.includes(location.hash.slice(1))) {
-    abrirPainel(location.hash.slice(1));
-}
+
 
 </script>
 
